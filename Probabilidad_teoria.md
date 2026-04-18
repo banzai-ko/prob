@@ -1,7 +1,7 @@
 Ejercicios
 **13.** Numero de 5 cifras con 1,2,4,6,8 y dos 8
 <!-- C(5,2) x V(4,3)-->
-    _ _ _ _ _
+`    _ _ _ _ _  `
 
 De 5 lugares tomo 2 (sin importar el orden)
 \(
@@ -121,7 +121,26 @@ V(4,3) = 24
 **15.** 
 <!-- V'(2,4)-->
 Cuatro niños, 2 habitaciones ¿cuántas formas hay de colocarlos? 
-    _ _ _ _
+### Distribuciones de 4 niños en 2 habitaciones
+### Ejemplo de distribuciones (4 niños, 2 habitaciones)
+
+#### Caso 1: Todos en una habitación
+- A: Niño1, Niño2, Niño3, Niño4
+- B: —
+
+
+
+#### Caso 2: Distribución 3–1
+- A: Niño1, Niño2, Niño3
+- B: Niño4
+
+---
+
+#### Caso 3: Distribución 2–2
+- A: Niño1, Niño2
+- B: Niño3, Niño4
+
+**Resolución**
 
 V'= (2,4 ) =
 
