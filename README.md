@@ -1,4 +1,8 @@
 # Probabilidad y Estadística UTN
++ Que usar para visualizar?
+
+Vs code + [Markdown preview enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+
 ## Apuntes de clase
  - [indice](./indice.md)
 ## Ejercicios
