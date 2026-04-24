@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 # Datos
 niveles = ["Bueno", "Regular", "Malo"]
-fi = [62, 25, 13]
+fi = [2,4,4,1,3,2,2,2]
 
 # Gráfico de barras (todas del mismo color y ancho fijo)
 plt.figure(figsize=(6,4))
