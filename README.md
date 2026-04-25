@@ -4,9 +4,12 @@
 Vs code + [Markdown preview enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 
 ## Apuntes de clase
- - [indice](./indice.md)
+ Ver :[indice](./indice.md)
+
+## Teoria
+- [Teoria](./Teoria/) 
 ## Ejercicios
- - [Práctico](./practico.md)
+ - [Práctico](./Practico)
 
 ## Primera Parte
 + Unidad 1 - Datos Estadísticos

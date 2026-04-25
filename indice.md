@@ -33,14 +33,14 @@ Algunas definiciones de estadística
 sigue --> 
 
 ## Clases
-+ [Probabilidad](./Probabilidad.md)
-+ [Combinatoria](./Combinatoria.md)
-+ [Teoría de Probabilidad](./Teoria_prob.md)
++ [Probabilidad](./Teoria/unidad_1_probabilidad.md)
++ [Combinatoria](./Teoria/unidad_2_combinatorias.md)
++ [Teoría de Probabilidad](./Teoria/unidad_3_teoria_prob.md)
 
 ### Práctico
-[Unidad 1](./practico_unidad1.md)
-[Unidad 2](./practico_unidad2.md)
-[Unidad 3](./practico_unidad3.md)
+[Unidad 1](./Practico/unidad_1_practico.md)
+[Unidad 2](./Practico/unidad_2_practico.md)
+[Unidad 3](./Practico/unidad_3_practico.md)
 
 
 
