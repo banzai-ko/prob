@@ -30,4 +30,17 @@ Algunas definiciones de estadística
 
 **Unidad estadística:** Se considera a cada individuo de la una población una unidad estadística.
 
-sigue --> [Probabilidad](Probabilidad.md)
+sigue --> 
+
+## Clases
++ [Probabilidad](./Probabilidad.md)
++ [Combinatoria](./Combinatoria.md)
++ [Teoría de Probabilidad](./Teoria_prob.md)
+
+### Práctico
+[Unidad 1](./practico_unidad1.md)
+[Unidad 2](./practico_unidad2.md)
+[Unidad 3](./practico_unidad3.md)
+
+
+
