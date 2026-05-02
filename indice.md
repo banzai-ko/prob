@@ -37,10 +37,13 @@ sigue -->
 + [Combinatoria](./Teoria/unidad_2_combinatorias.md)
 + [Teoría de Probabilidad](./Teoria/unidad_3_teoria_prob.md)
 
-### Práctico
-[Unidad 1](./Practico/unidad_1_practico.md)
-[Unidad 2](./Practico/unidad_2_practico.md)
-[Unidad 3](./Practico/unidad_3_practico.md)
+## Práctico
++ [Unidad 1](./Practico/unidad_1_practico.md)
++ [Unidad 2](./Practico/unidad_2_practico.md)
++ [Unidad 3](./Practico/unidad_3_practico.md)
+
+## Glosario
++ [Glosario](./Glosario.md)
 
 
 

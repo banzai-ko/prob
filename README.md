@@ -24,3 +24,5 @@ Vs code + [Markdown preview enhanced](https://marketplace.visualstudio.com/items
 + Unidad 7 - Distribuciones discretas particulares
 + Unidad 8 - Distribución normal
 + Unidad 9 - Estimación
+
+

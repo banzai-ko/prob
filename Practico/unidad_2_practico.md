@@ -7,11 +7,105 @@
 + S -> C -> N -> R
 + N: 1 al 9
 
-
-
 Entonces:  **Resultado:** N x 4; 9 x 4 = 36
 
- <hr
+ <hr>
+
+## 11. Problema de los coches
+
+Un niño tiene 4 coches distintos:
+
+- azul
+- blanco
+- verde
+- rojo
+
+y desea regalarlos a 3 hermanos:
+
+- Fernando
+- Luis
+- Teresa
+
+Cada coche puede asignarse a cualquiera de los 3 hermanos.
+
+Este caso corresponde a una:
+
+**Variación con repetición**
+
+Porque:
+
+- hay \( n = 3 \) opciones posibles (hermanos)
+- se realizan \( r = 4 \) asignaciones (coches)
+- un mismo hermano puede recibir varios coches
+
+La fórmula es:
+
+\( V'_r(3,4)=3^4 \)
+
+\( V'_r(3,4)=81 \)
+
+Sustituyendo:
+
+\( VR(3,4)=3^4 \)
+
+\( VR(3,4)=81 \)
+
+### Resultado
+
+El número de formas diferentes de regalar los coches es:
+
+\( 81 \)
+
+## 12. Grupos 
+
+Se tienen 4 amigos:
+
+- Andrés
+- Benito
+- Clara
+- Daniel
+
+Deben dividirse en:
+
+- un grupo de 2 para Matemáticas
+- un grupo de 2 para Lengua
+
+Como los trabajos son diferentes, importa qué grupo realiza cada trabajo.
+
+Este caso se resuelve usando:
+
+**Combinación sin repetición**
+
+porque se seleccionan 2 personas de 4 para formar el primer grupo.
+
+La fórmula es:
+
+\( C(n,r)=\frac{n!}{r!(n-r)!} \)
+
+Sustituyendo:
+
+\( C(4,2)=\frac{4!}{2!(4-2)!} \)
+
+\( C(4,2)=\frac{4!}{2!2!} \)
+
+\( C(4,2)=\frac{24}{4} \)
+
+\( C(4,2)=6 \)
+
+Cada selección determina automáticamente el segundo grupo.
+
+### Posibles divisiones
+
+1. Andrés–Benito | Clara–Daniel  
+2. Andrés–Clara | Benito–Daniel  
+3. Andrés–Daniel | Benito–Clara  
+4. Benito–Clara | Andrés–Daniel  
+5. Benito–Daniel | Andrés–Clara  
+6. Clara–Daniel | Andrés–Benito  
+
+### Resultado
+
+\( 6 \) formas
 
 ## 13. Numero de 5 cifras con 1,2,4,6,8 y dos 8
 <!-- C(5,2) x V(4,3)-->
@@ -132,6 +226,49 @@ V(4,3) = 24
 
 <hr>
 
+## 14. Autos
+
+Se tienen:
+
+- 5 Espacios.
+- 3 coches distintos:
+  - Angel
+  - Beatriz
+  - Carmen
+
+Cada coche debe ocupar una plaza distinta.
+
+Este caso corresponde a una:
+
+**Variación sin repetición**
+
+porque:
+
+- hay \( n = 5 \) plazas disponibles
+- se asignan \( r = 3 \) coches
+- una plaza no puede repetirse
+- importa el orden de asignación
+
+La fórmula es:
+
+\( V(n,r)=\frac{n!}{(n-r)!} \)
+
+Sustituyendo:
+
+\( V(5,3)=\frac{5!}{(5-3)!} \)
+
+\( V(5,3)=\frac{5!}{2!} \)
+
+\( V(5,3)=\frac{120}{2} \)
+
+\( V(5,3)=60 \)
+
+### Resultado
+
+El número de formas posibles de aparcar los coches es:
+
+\( 60 \)
+
 ## 15. 
 <!-- V'(2,4)-->
 Cuatro niños, 2 habitaciones ¿cuántas formas hay de colocarlos? 
@@ -148,7 +285,7 @@ Cuatro niños, 2 habitaciones ¿cuántas formas hay de colocarlos?
 - A: Niño1, Niño2, Niño3
 - B: Niño4
 
----
+<HR>
 
 #### Caso 3: Distribución 2–2
 - A: Niño1, Niño2
@@ -189,6 +326,8 @@ V'(2,4) = 16
 \)
 
 <hr>
+
+
 
 ## 21. 
 <!-- C(10,3) = v(10,3) / P3 = 10 x 9 x 8 / 3 x 2 x1 = 720/6 = 120 -->
@@ -346,7 +485,7 @@ donde:
 - \( C(10,2) \): elegir 2 pediatras entre 10.
 - \( C(7,1) \): elegir 1 clínico entre 7.
 
----
+<HR>
 
 Casos favorables: que **Dr P y Dr S no aparezcan juntos**.
 
@@ -370,7 +509,7 @@ C(2,0)\cdot C(8,2)\cdot C(7,1)
 C(2,1)\cdot C(8,1)\cdot C(7,1)
 \)
 
----
+<HR>
 
 Entonces:
 
@@ -432,4 +571,3 @@ o aproximadamente:
 |---|---|---|---|---|---|---|---|---|---|
 | 0 | 7 | 2 | 4 | 1 | 2 | 1 | 5 | 4 | 3 |
 | 6 | 2 | 6 | 1 | 0 | 2 | 4 | 7 | 5 | 1 |
-
