@@ -116,7 +116,7 @@ flowchart LR
 
 # Teorema de Bayes
 
-Continuando con el ejemplo antrior. Suponemos que se selecciona un artículo al azar y este resulta defectuoso ¿Cuál es la probabilidad de que el artículo seleccionado fue producido por la máquina A?
+Continuando con el ejemplo anterior. Suponemos que se selecciona un artículo al azar y este resulta defectuoso ¿Cuál es la probabilidad de que el artículo seleccionado fue producido por la máquina A?
 
 
 <!-- P=(A/D)= P(AND)/ P(D) = 0,5 . 0,08 / 0,037 = 0,015/ 0,057 -->

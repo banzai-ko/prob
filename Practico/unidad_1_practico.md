@@ -1160,6 +1160,9 @@ la clase de \(D_6\) es:
 
 ---
 ### 8.
+
 Alturas
+
 ### 9.
+
 Faltan 8 y 9

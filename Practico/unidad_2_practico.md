@@ -327,7 +327,165 @@ V'(2,4) = 16
 
 <hr>
 
+## 16.
 
+### Problema de combinatoria
+
+Se tienen 4 cromos distintos:
+
+- 1
+- 2
+- 3
+- 4
+
+y deben repartirse entre:
+
+- María
+- Carmen
+
+Cada una debe recibir exactamente 2 cromos.
+
+Este caso corresponde a una:
+
+**Combinación sin repetición**
+
+porque:
+
+- se eligen 2 cromos de un total de 4
+- no se repiten cromos
+- el grupo restante queda automáticamente asignado
+
+La fórmula es:
+
+\( C(n,r)=\frac{n!}{r!(n-r)!} \)
+
+Donde:
+
+- \( n = 4 \)
+- \( r = 2 \)
+
+#### A. Sustitución
+
+\( C(4,2)=\frac{4!}{2!(4-2)!} \)
+
+\( C(4,2)=\frac{4!}{2!2!} \)
+
+\( C(4,2)=\frac{24}{4} \)
+
+\( C(4,2)=6 \)
+
+#### B. Posibles repartos
+
+1. María: (1,2) — Carmen: (3,4)  
+2. María: (1,3) — Carmen: (2,4)  
+3. María: (1,4) — Carmen: (2,3)  
+4. María: (2,3) — Carmen: (1,4)  
+5. María: (2,4) — Carmen: (1,3)  
+6. María: (3,4) — Carmen: (1,2)
+
+#### Resultado
+
+\( 6 \) formas
+
+## 17.
+### Problema de combinatoria
+
+Se tienen 4 bolas numeradas: 2, 4, 7, 9
+
+Se realizan 3 extracciones, y después de cada extracción la bola vuelve a la bolsa.
+
+Esto significa que:
+
+- una misma cifra puede repetirse
+- importa el orden de aparición
+- se forman números de 3 cifras
+
+Este caso corresponde a una:
+
+**Variación con repetición**
+
+La fórmula es:
+
+\( V'_r(n,r)=n^r \)
+
+Donde:
+
+- \( n = 4 \) posibilidades
+- \( r = 3 \) posiciones
+
+#### A. Sustitución
+
+\( V'_r(4,3)=4^3 \)
+
+\( V'_r(4,3)=64 \)
+
+#### B. Ejemplos de números posibles
+
+- \(222\)
+- \(247\)
+- \(999\)
+- \(742\)
+- \(924\)
+
+#### Resultado
+
+Se pueden formar:
+
+\( 64 \)
+
+números distintos de tres cifras.
+
+## 18.
+### Problema de combinatoria
+
+Se tienen 5 cartas con las letras: A, B, C, C, C
+
+Se desea ordenar las 5 cartas en una fila.
+
+Este caso corresponde a una:
+
+**Permutación con repetición**
+
+porque:
+
+- se ordenan todos los elementos
+- existen letras repetidas
+- el orden importa
+
+La fórmula es:
+
+\( PR=\frac{n!}{n_1!n_2!\cdots n_k!} \)
+
+Donde:
+
+- \( n = 5 \)
+- la letra A aparece \(1\) vez
+- la letra B aparece \(1\) vez
+- la letra C aparece \(3\) veces
+
+#### A. Sustitución
+
+\( PR=\frac{5!}{1!1!3!} \)
+
+\( PR=\frac{120}{6} \)
+
+\( PR=20 \)
+
+#### B. Ejemplos de ordenamientos
+
+- \( ACBCC \)
+- \( CCABC \)
+- \( BCACC \)
+- \( CABCC \)
+- \( CCCAB \)
+
+#### Resultado
+
+Se pueden formar:
+
+\( 20 \)
+
+ordenamientos diferentes.
 
 ## 21. 
 <!-- C(10,3) = v(10,3) / P3 = 10 x 9 x 8 / 3 x 2 x1 = 720/6 = 120 -->
