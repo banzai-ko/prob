@@ -2,6 +2,7 @@
 
 ## 1.
 Piezas Defectuosas - Piezas rechazadas por lote
+
 |   |   |   |   |   |   |   |   |   |   |
 |---|---|---|---|---|---|---|---|---|---|
 | 0 | 7 | 2 | 4 | 1 | 2 | 1 | 5 | 4 | 3 |
@@ -30,7 +31,7 @@ elaborar la distribucion de frecuencias para la variable aleatoria discreta
 
 #### Distribución de frecuencias
 
-| x | fi | fir  | fir% | Fk  | fkr  | fkr% |
+| x | fi | fir  | fir% | Fk  | Fkr  | fkr% |
 |---|----|------|------|-----|------|------|
 | 0 | 2  | 0.10 | 10%  | 2   | 0.10 | 10%  |
 | 1 | 4  | 0.20 | 20%  | 6   | 0.30 | 30%  |
@@ -42,6 +43,7 @@ elaborar la distribucion de frecuencias para la variable aleatoria discreta
 | 7 | 2  | 0.10 | 10%  | 20  | 1.00 | 100% |
 
     Fk = [2, 6, 10, 11, 14, 16, 18, 20 ]
+
 #### Media
 
 Media aritmética = promedio
@@ -55,7 +57,7 @@ Total de fallos: (0 + 7 + 2 + 4 + 1 + 2 + 1 + 5 + 4 + 3 + 6 + 2 + 6 + 1 + 0 + 2 
 
 
 #### Mediana 
-ordenar de menos a mayor:
+ordenar de menor a mayor:
 + Si el número total es impar mediana es elemento central
 + Si es par promedio de elemento central y n +1
 
@@ -139,18 +141,18 @@ s = \sqrt{4.9275} = 2,219797288
 #### Frecuencias Absolutas
 ##### Diagrama de Barras
 
-![Fallas por lote](./img/barras_frecuencia_pco.png)
+![Fallas por lote](../img/barras_frecuencia_pco.png)
 
 #### #Histograma
 
-![Fallas por lote](./img/histograma_pco.png)
+![Fallas por lote](../img/histograma_pco.png)
 
 
 #### Frecuencias Acumuladas
 
 ##### Ojiva
 
-![Ojiva](./img/ojiva_pco.png)
+![Ojiva](../img/ojiva_pco.png)
 
 ## 2.
 Tabla de Pesos, en Kg
@@ -505,6 +507,8 @@ Usando los datos del ejercicio:
 | 5     | 90–99          | 10     | 58     |
 | 6     | 100–109        | 5      | 63     |
 | 7     | 110–119        | 2      | 65     |
+
+
 ![Ojiva](../img/ojiva_pco_5.png)
 
 
@@ -1159,10 +1163,210 @@ la clase de \(D_6\) es:
 \( D_6 = 70.597137 \text{ años} \)
 
 ---
-### 8.
+## 8. 
+Alturas en Metros - Plantas de Maiz
 
-Alturas
+### Data
+|      |      |      |      |      |      |      |      |      |      | 
+|------|------|------|------|------|------|------|------|------|------|
+| 1,06 | 1,16 | 1,21 | 0,96 | 1,17 | 1,11 | 1,03 | 1,11 | 1,20 | 1,26 |
+| 1,14 | 1,15 | 1,07 | 1,18 | 1,22 | 0,97 | 1,20 | 1,11 | 1,14 | 1,09 |
+| 1,18 | 1,12 | 1,15 | 1,05 | 1,24 | 1,12 | 1,19 | 1,03 | 1,19 | 1,10 |
+| 1,33 | 1,04 | 1,18 | 1,12 | 1,19 | 1,08 | 1,27 | 1,30 | 1,13 | 1,13 |
 
-### 9.
+Realizar la correspondiente distribución de frecuencias.
+Ordena: [ 0,96, 0,97, 1,03, 1,03, 1,04, 1,05, 1,06, 1,07, 1,08, 1,09, 1,10, 1,11, 1,11, 1,11, 1,12, 1,12, 1,12, 1,13, 1,13, 1,14, 1,14, 1,15, 1,15, 1,16, 1,17, 1,18, 1,18, 1,18, 1,19, 1,19, 1,19, 1,20, 1,20, 1,21, 1,22, 1,24, 1,26, 1,27, 1,30, 1,33 ]
+
+## ¿De dónde salen las decisiones?
+
+---
+
+## 1. Rango
+
+\(
+R=x_{\max}-x_{\min}
+\)
+
+Se usa porque el rango mide la **dispersión total de los datos**, es decir, desde el mínimo hasta el máximo.
+
+Es válido porque:
+
+- define el “intervalo total” de trabajo
+- es la base para construir clases
+
+---
+
+## 2. Número de clases (Sturges)
+
+\(
+k=1+3{,}322\log(n)
+\)
+
+Se usa porque es una **regla empírica estándar** para decidir cuántos intervalos usar en datos agrupados.
+
+Es válida porque:
+
+- equilibra detalle vs. simplificación
+- evita demasiadas o muy pocas clases
+- funciona bien para \(n\) moderado
+
+---
+
+## 3. Amplitud de clase
+
+\(
+A=\frac{R}{k}
+\)
+
+Se usa porque reparte el rango total en partes iguales.
+
+Es válida porque:
+
+- garantiza clases uniformes
+- permite cubrir todo el rango sin huecos
+
+---
+
+## 4. Construcción de clases
+
+\(
+L_{i+1}=L_i + A
+\)
+
+Se usa porque cada intervalo debe tener la **misma amplitud**.
+
+Es válida porque:
+
+- asegura continuidad
+- evita solapamientos
+- mantiene estructura ordenada
+
+---
+
+## 5. Forma de cada clase
+
+\(
+\text{Clase}_i=[L_i,\ L_i + A)
+\)
+
+Se usa esta notación porque:
+
+- incluye el límite inferior
+- excluye el superior para evitar duplicación de datos
+
+Es válida porque:
+
+- cada dato cae en una sola clase
+- evita ambigüedad en conteos
+
+---
+
+
+## ¿Qué es \(R\), \(k\) y \(A\) y de dónde salen?
+
+---
+
+## 1. Rango \(R\)
+
+\(
+R=x_{\max}-x_{\min}
+\)
+
+### ¿Qué es?
+Es la **distancia total** que cubren los datos.
+
+### ¿De dónde sale?
+Sale de restar:
+
+- valor más grande
+- valor más pequeño
+
+### ¿Por qué se usa?
+Porque define el **espacio total** que deben cubrir las clases.
+
+---
+
+## 2. Número de clases \(k\)
+
+\(
+k=1+3{,}322\log(n)
+\)
+
+### ¿Qué es?
+Es la cantidad de intervalos en los que se agrupan los datos.
+
+### ¿De dónde sale?
+De la **regla de Sturges** (criterio estadístico estándar).
+
+### ¿Por qué se usa?
+Porque equilibra:
+
+- demasiado detalle (muchas clases)
+- poca información (pocas clases)
+
+---
+
+## 3. Amplitud \(A\)
+
+\(
+A=\frac{R}{k}
+\)
+
+### ¿Qué es?
+Es el **tamaño de cada intervalo**.
+
+### ¿De dónde sale?
+De dividir el rango total entre el número de clases.
+
+### ¿Por qué se usa?
+Porque asegura que:
+
+- todas las clases sean iguales
+- los datos cubran todo el rango sin huecos
+
+---
+
+
+## Resumen lógico
+
+\(
+\text{Datos} \rightarrow R \rightarrow k \rightarrow A \rightarrow \text{Clases}
+\)
+---
+
+
+\(
+\bar{x}=\frac{\sum x_i}{n}=\frac{44{,}88}{40}=1{,}122
+\)
+
+\(
+Me=\frac{x_{20}+x_{21}}{2}=\frac{1{,}14+1{,}14}{2}=1{,}14
+\)
+
+\(
+Mo=1{,}11,\ 1{,}12,\ 1{,}18,\ 1{,}19
+\)
+
+\(
+Q_3=\frac{3(n+1)}{4}=\frac{3(41)}{4}=30{,}75 \Rightarrow Q_3 \approx 1{,}19
+\)
+
+\(
+D_8=\frac{8(n+1)}{10}=\frac{8(41)}{10}=32{,}8 \Rightarrow D_8 \approx 1{,}20
+\)
+
+\(
+P_{24}=\frac{24(n+1)}{100}=\frac{24(41)}{100}=9{,}84 \Rightarrow P_{24} \approx 1{,}09
+\)
+
+\(
+\sigma^2=\frac{1}{n}\sum (x_i-\bar{x})^2 \approx 0{,}0041
+\)
+
+\(
+\sigma=\sqrt{\sigma^2} \approx 0{,}064
+\)
+
+## 9.
 
 Faltan 8 y 9

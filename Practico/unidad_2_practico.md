@@ -438,7 +438,7 @@ números distintos de tres cifras.
 ## 18.
 ### Problema de combinatoria
 
-Se tienen 5 cartas con las letras: A, B, C, C, C
+Se tienen 5 cartas con las letras:   A, B, C, C, C
 
 Se desea ordenar las 5 cartas en una fila.
 
