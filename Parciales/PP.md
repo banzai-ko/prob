@@ -650,13 +650,13 @@ Respuesta:
 \boxed{\sigma\approx5.91 \text{ minutos}}
 \)
 
-# c) Cuartil 1
+# c. Cuartil 1
 
 \(
 \frac{N}{4}=\frac{40}{4}=10
 \)
 
-El dato 10 pertenece al intervalo:
+El dato 10 pertenece al intervalo(ver fk):
 
 \(
 [15;20)
