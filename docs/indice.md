@@ -1,11 +1,8 @@
 # Probabilidad y Estadística
 
 # Índice de contenidos
-- [Fechas de Parciales](#Fechas-de-Parciales)
-- [Probabilidad](Probabilidad.md)
-- [Variaciones](Combinatoria.md)
-
-
+- [Fechas de Parciales](#fechas-de-parciales)
+- [Clases](#clases)
 
 ## Fechas de Parciales 
 + 15/5 1er Parcial
@@ -33,10 +30,10 @@ Algunas definiciones de estadística
 sigue --> 
 
 ## Clases
-+ [Probabilidad](./Teoria/unidad_1_probabilidad.md)
-+ [Combinatoria](./Teoria/unidad_2_combinatorias.md)
-+ [Teoría de Probabilidad](./Teoria/unidad_3_teoria_prob.md)
-+ [Sucesos Independientes](./Teoria/unidad_4_teoria_prob.md)
++ [Probabilidad](./Teoria/1ra_Parte/unidad_1_probabilidad.md)
++ [Combinatoria](./Teoria/1ra_Parte/unidad_2_combinatorias.md)
++ [Teoría de Probabilidad](./Teoria/1ra_Parte/unidad_3_teoria_prob.md)
++ [Sucesos Independientes](./Teoria/1ra_Parte/unidad_4_sucesos_indep.md)
 
 ## Práctico
 + [Unidad 1](./Practico/unidad_1_practico.md)

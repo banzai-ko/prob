@@ -47,7 +47,7 @@ B= es un As
 ### Problema 1
 La probabilidad de que un alumno apruebe Álgebra es de 0,7. La probabilidad de aprobar Análisis Matemático es 0,6 y la de que aprueba ambas es 0,55. ¿Cuál es la probabilidad de que apruebe Análisis si no aprobó Álgebra?.
 
-![Diagrama de Venn](./img/venn.png)
+![Diagrama de Venn](../../img/venn.png)
 
 \(P(An \mid Al) = \frac{P(An \cap Al)}{P(Al)}\)
 
@@ -59,7 +59,7 @@ La probabilidad de que un alumno apruebe Álgebra es de 0,7. La probabilidad de 
 De un cierto grupo de personas se sabe que el 80% son morochos, que el 25% son fumadores y que los que son morochos y fumadores constituyen el 85% del grupo.
 Calcula la prob de elegir un fumador y que este resulte ser morocho.
 
-![Diagrama de Venn](./img/venn_prob_2.png)
+![Diagrama de Venn](../../img/venn_prob_2.png)
 
 <!-- P(MUF) = P(MUF)/P(MNF) = P(F)+P(M)-->
 \(P(M \cup F) = 0.85\)
@@ -80,7 +80,7 @@ La probabilida de de elegir un fumador y que resulte ser morocho es 80% (0,8).
 
 Mostraremos a través de un diagrama una partición del espacio muestral. De un experimento en 4 sucesos B1, B2, B3 y B4 y la representación de un suceso cualquiera A. 
 
-![Diagrama](./img/prob_total.png)
+![Diagrama](../../img/prob_total.png)
 
 Los sucesos que forman parte de una partición deben cumplir determinadas condiciones:
 

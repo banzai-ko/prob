@@ -1,0 +1,5463 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Teoria/2da_Parte/clase29_5/">
+      
+      
+        <link rel="next" href="../unidad_2_practico/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Unidad 1 - Probabilidad</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unidad-1-datos-estadisticos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Probabilidad" class="md-header__button md-logo" aria-label="Probabilidad" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Probabilidad
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unidad 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="cyan"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Probabilidad" class="md-nav__button md-logo" aria-label="Probabilidad" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Probabilidad
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Teoría
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Teoria/1ra_Parte/Probabilidad_teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Teoria/1ra_Parte/unidad_1_probabilidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Teoria/1ra_Parte/unidad_2_combinatorias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Teoria/1ra_Parte/unidad_3_teoria_prob/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Teoria/1ra_Parte/unidad_4_sucesos_indep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Teoria/2da_Parte/variable_aleatoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variable Aleatoria
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Teoria/2da_Parte/clase29_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clase 29/5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prácticos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Prácticos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conteo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conteo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribucion-de-frecuencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distribución de frecuencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Media
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mediana
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varianza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Varianza
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Varianza">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabla-resumen-para-calculo-de-varianza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabla resumen para cálculo de varianza
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fórmulas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desviacion-estandar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desviación estándar:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráficos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gráficos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frecuencias-absolutas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frecuencias Absolutas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Frecuencias Absolutas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-de-barras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagrama de Barras
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#histograma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #Histograma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frecuencias-acumuladas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frecuencias Acumuladas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Frecuencias Acumuladas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ojiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ojiva
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mediana_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mediana
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-la-mediana-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de la mediana para datos agrupados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moda
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-a-limite-inferior-de-la-6ta-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 - a. Limite inferior de la 6ta clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabla-de-frecuencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabla de frecuencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-b-limite-superior-de-la-4ta-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 - b. Limite superior de la 4ta clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-c-marca-de-clase-de-la-3-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 - c. Marca de clase de la 3° clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-d-limites-reales-de-la-5ta-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 - d. Limites reales de la 5ta clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-los-limites-reales-de-la-5-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de los límites reales de la 5° clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-tamano-del-5to-intervalo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        e. Tamaño del 5to Intervalo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-f-frecuencia-de-la-3-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 - f. Frecuencia de la 3° clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-g-frecuencia-relativa-de-la-3er-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 - g. Frecuencia Relativa de la 3er Clase
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 - g. Frecuencia Relativa de la 3er Clase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-la-frecuencia-relativa-de-la-3-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de la frecuencia relativa de la 3° clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-h-intervalo-de-clase-de-mayor-frecuencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 - h. Intervalo de clase de mayor frecuencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#histograma_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histograma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poligono-de-frecuencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Poligono de Frecuencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ojiva_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ojiva
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-la-media-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de la media para datos agrupados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-la-mediana-para-datos-agrupados_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de la mediana para datos agrupados
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warning-consultar-este-punto-limite-real-vs-limite-aparente-diferencia-con-guia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        &gt; WARNING: Consultar este punto: Límite real vs. límite aparente, diferencia con guía
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="&gt; WARNING: Consultar este punto: Límite real vs. límite aparente, diferencia con guía">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-la-moda-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de la moda para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo de la moda para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-del-cuartil-1-q1-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo del Cuartil 1 (Q1) para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo del Cuartil 1 (Q1) para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-ubicacion-del-cuartil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Ubicación del cuartil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-datos-de-la-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Datos de la clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-sustitucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Sustitución
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C. Sustitución">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-del-cuartil-3-q3-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo del Cuartil 3 (Q3) para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo del Cuartil 3 (Q3) para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-ubicacion-del-cuartil_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Ubicación del cuartil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-datos-de-la-clase_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Datos de la clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-sustitucion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Sustitución
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C. Sustitución">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-del-decil-8-d_8-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo del Decil 8 (\(D_8\)) para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo del Decil 8 (\(D_8\)) para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-ubicacion-del-decil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Ubicación del decil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-datos-de-la-clase_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Datos de la clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-sustitucion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Sustitución
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C. Sustitución">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-del-percentil-14-p_14-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo del percentil 14 (\(P_{14}\)) para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo del percentil 14 (\(P_{14}\)) para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-ubicacion-del-percentil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Ubicación del percentil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-datos-de-la-clase_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Datos de la clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-sustitucion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Sustitución
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-del-percentil-74-p_74-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo del percentil 74 (\(P_{74}\)) para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo del percentil 74 (\(P_{74}\)) para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-ubicacion-del-percentil_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Ubicación del percentil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-datos-de-la-clase_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Datos de la clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-sustitucion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Sustitución
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C. Sustitución">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-la-varianza-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de la varianza para datos agrupados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabla-de-calculo-de-varianza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabla de cálculo de varianza
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tabla de cálculo de varianza">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-la-desviacion-estandar-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de la desviación estándar para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo de la desviación estándar para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-trabajadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Trabajadores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Trabajadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculo-del-cuartil-1-q_1-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo del cuartil 1 (\(Q_1\)) para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo del cuartil 1 (\(Q_1\)) para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-tabla-de-frecuencias-acumuladas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Tabla de frecuencias acumuladas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-datos-de-la-clase_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Datos de la clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-sustitucion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Sustitución
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-del-decil-6-d_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo del decil 6 (\(D_6\))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo del decil 6 (\(D_6\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-ubicacion-del-decil_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Ubicación del decil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-datos-de-la-clase_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Datos de la clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-sustitucion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Sustitución
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#de-donde-salen-las-decisiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿De dónde salen las decisiones?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-rango" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Rango
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-numero-de-clases-sturges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Número de clases (Sturges)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-amplitud-de-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Amplitud de clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-construccion-de-clases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Construcción de clases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-forma-de-cada-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Forma de cada clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-r-k-y-a-y-de-donde-salen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es \(R\), \(k\) y \(A\) y de dónde salen?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-rango-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Rango \(R\)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Rango \(R\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-donde-sale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿De dónde sale?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-se-usa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Por qué se usa?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-numero-de-clases-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Número de clases \(k\)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Número de clases \(k\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-donde-sale_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿De dónde sale?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-se-usa_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Por qué se usa?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-amplitud-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Amplitud \(A\)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Amplitud \(A\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-donde-sale_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿De dónde sale?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-se-usa_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Por qué se usa?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-logico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen lógico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unidad_2_practico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unidad_3_practico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unidad_4_practico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parciales
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parciales
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Parciales/PP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Parciales/PP2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PP2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Parciales/Primer_parcial_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Primer Parcial 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Glosario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conteo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conteo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribucion-de-frecuencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distribución de frecuencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Media
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mediana
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varianza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Varianza
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Varianza">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabla-resumen-para-calculo-de-varianza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabla resumen para cálculo de varianza
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fórmulas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desviacion-estandar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desviación estándar:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráficos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gráficos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frecuencias-absolutas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frecuencias Absolutas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Frecuencias Absolutas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-de-barras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagrama de Barras
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#histograma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #Histograma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frecuencias-acumuladas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frecuencias Acumuladas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Frecuencias Acumuladas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ojiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ojiva
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mediana_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mediana
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-la-mediana-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de la mediana para datos agrupados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moda
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-a-limite-inferior-de-la-6ta-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 - a. Limite inferior de la 6ta clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabla-de-frecuencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabla de frecuencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-b-limite-superior-de-la-4ta-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 - b. Limite superior de la 4ta clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-c-marca-de-clase-de-la-3-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 - c. Marca de clase de la 3° clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-d-limites-reales-de-la-5ta-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 - d. Limites reales de la 5ta clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-los-limites-reales-de-la-5-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de los límites reales de la 5° clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-tamano-del-5to-intervalo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        e. Tamaño del 5to Intervalo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-f-frecuencia-de-la-3-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 - f. Frecuencia de la 3° clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-g-frecuencia-relativa-de-la-3er-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 - g. Frecuencia Relativa de la 3er Clase
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 - g. Frecuencia Relativa de la 3er Clase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-la-frecuencia-relativa-de-la-3-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de la frecuencia relativa de la 3° clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-h-intervalo-de-clase-de-mayor-frecuencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 - h. Intervalo de clase de mayor frecuencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#histograma_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histograma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poligono-de-frecuencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Poligono de Frecuencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ojiva_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ojiva
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-la-media-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de la media para datos agrupados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-la-mediana-para-datos-agrupados_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de la mediana para datos agrupados
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warning-consultar-este-punto-limite-real-vs-limite-aparente-diferencia-con-guia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        &gt; WARNING: Consultar este punto: Límite real vs. límite aparente, diferencia con guía
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="&gt; WARNING: Consultar este punto: Límite real vs. límite aparente, diferencia con guía">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-la-moda-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de la moda para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo de la moda para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-del-cuartil-1-q1-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo del Cuartil 1 (Q1) para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo del Cuartil 1 (Q1) para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-ubicacion-del-cuartil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Ubicación del cuartil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-datos-de-la-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Datos de la clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-sustitucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Sustitución
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C. Sustitución">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-del-cuartil-3-q3-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo del Cuartil 3 (Q3) para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo del Cuartil 3 (Q3) para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-ubicacion-del-cuartil_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Ubicación del cuartil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-datos-de-la-clase_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Datos de la clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-sustitucion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Sustitución
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C. Sustitución">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-del-decil-8-d_8-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo del Decil 8 (\(D_8\)) para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo del Decil 8 (\(D_8\)) para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-ubicacion-del-decil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Ubicación del decil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-datos-de-la-clase_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Datos de la clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-sustitucion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Sustitución
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C. Sustitución">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-del-percentil-14-p_14-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo del percentil 14 (\(P_{14}\)) para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo del percentil 14 (\(P_{14}\)) para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-ubicacion-del-percentil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Ubicación del percentil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-datos-de-la-clase_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Datos de la clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-sustitucion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Sustitución
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-del-percentil-74-p_74-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo del percentil 74 (\(P_{74}\)) para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo del percentil 74 (\(P_{74}\)) para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-ubicacion-del-percentil_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Ubicación del percentil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-datos-de-la-clase_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Datos de la clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-sustitucion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Sustitución
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C. Sustitución">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-la-varianza-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de la varianza para datos agrupados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabla-de-calculo-de-varianza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabla de cálculo de varianza
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tabla de cálculo de varianza">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-de-la-desviacion-estandar-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo de la desviación estándar para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo de la desviación estándar para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resultado_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-trabajadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Trabajadores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Trabajadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculo-del-cuartil-1-q_1-para-datos-agrupados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo del cuartil 1 (\(Q_1\)) para datos agrupados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo del cuartil 1 (\(Q_1\)) para datos agrupados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-tabla-de-frecuencias-acumuladas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Tabla de frecuencias acumuladas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-datos-de-la-clase_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Datos de la clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-sustitucion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Sustitución
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-del-decil-6-d_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo del decil 6 (\(D_6\))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cálculo del decil 6 (\(D_6\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-ubicacion-del-decil_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Ubicación del decil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-datos-de-la-clase_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Datos de la clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-sustitucion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Sustitución
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#de-donde-salen-las-decisiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿De dónde salen las decisiones?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-rango" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Rango
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-numero-de-clases-sturges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Número de clases (Sturges)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-amplitud-de-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Amplitud de clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-construccion-de-clases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Construcción de clases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-forma-de-cada-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Forma de cada clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-r-k-y-a-y-de-donde-salen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es \(R\), \(k\) y \(A\) y de dónde salen?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-rango-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Rango \(R\)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Rango \(R\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-donde-sale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿De dónde sale?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-se-usa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Por qué se usa?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-numero-de-clases-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Número de clases \(k\)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Número de clases \(k\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-donde-sale_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿De dónde sale?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-se-usa_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Por qué se usa?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-amplitud-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Amplitud \(A\)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Amplitud \(A\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-donde-sale_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿De dónde sale?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-se-usa_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Por qué se usa?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-logico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen lógico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="unidad-1-datos-estadisticos">Unidad 1 - Datos estadísticos</h1>
+<h2 id="1">1.</h2>
+<p>Piezas Defectuosas - Piezas rechazadas por lote</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>7</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr>
+<td>6</td>
+<td>2</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+<td>7</td>
+<td>5</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>elaborar la distribucion de frecuencias para la variable aleatoria discreta</p>
+<h4 id="conteo">Conteo</h4>
+<table>
+<thead>
+<tr>
+<th>x (piezas rechazadas)</th>
+<th>cantidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<!--Data: [2,4,4,1,3,2,2,2] -->
+<p><strong>Total:</strong><br />
+- n = 20  </p>
+<h4 id="distribucion-de-frecuencias">Distribución de frecuencias</h4>
+<table>
+<thead>
+<tr>
+<th>x</th>
+<th>fi</th>
+<th>fir</th>
+<th>fir%</th>
+<th>Fk</th>
+<th>Fkr</th>
+<th>fkr%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>2</td>
+<td>0.10</td>
+<td>10%</td>
+<td>2</td>
+<td>0.10</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>1</td>
+<td>4</td>
+<td>0.20</td>
+<td>20%</td>
+<td>6</td>
+<td>0.30</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4</td>
+<td>0.20</td>
+<td>20%</td>
+<td>10</td>
+<td>0.50</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1</td>
+<td>0.05</td>
+<td>5%</td>
+<td>11</td>
+<td>0.55</td>
+<td>55%</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3</td>
+<td>0.15</td>
+<td>15%</td>
+<td>14</td>
+<td>0.70</td>
+<td>70%</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2</td>
+<td>0.10</td>
+<td>10%</td>
+<td>16</td>
+<td>0.80</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>6</td>
+<td>2</td>
+<td>0.10</td>
+<td>10%</td>
+<td>18</td>
+<td>0.90</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2</td>
+<td>0.10</td>
+<td>10%</td>
+<td>20</td>
+<td>1.00</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<pre><code>Fk = [2, 6, 10, 11, 14, 16, 18, 20 ]
+</code></pre>
+<h4 id="media">Media</h4>
+<p>Media aritmética = promedio</p>
+<!-- n=20 -->
+<!-- X= 63 / 20 -->
+<p>Total de fallos: (0 + 7 + 2 + 4 + 1 + 2 + 1 + 5 + 4 + 3 + 6 + 2 + 6 + 1 + 0 + 2 + 4 + 7 + 5 + 1)</p>
+<p><span class="arithmatex">\( t = 63 \)</span>
+<span class="arithmatex">\( n = 20 \)</span>
+<span class="arithmatex">\( \bar{x} = \frac{63}{20} = 3.15 \)</span></p>
+<h4 id="mediana">Mediana</h4>
+<p>ordenar de menor a mayor:
++ Si el número total es impar mediana es elemento central
++ Si es par promedio de elemento central y n +1</p>
+<p>entonces:<br />
+| Posición | Fallos |
+|----------|--------|
+| 1        | 0      |
+| 2        | 0      |
+| 3        | 1      |
+| 4        | 1      |
+| 5        | 1      |
+| 6        | 1      |
+| 7        | 2      |
+| 8        | 2      |
+| 9        | 2      |
+| 10       | 2      | -&gt; 3+2/2
+| 11       | 3      |
+| 12       | 4      |
+| 13       | 4      |
+| 14       | 4      |
+| 15       | 5      |
+| 16       | 5      |
+| 17       | 6      |
+| 18       | 6      |
+| 19       | 7      |
+| 20       | 7      |</p>
+<p><span class="arithmatex">\(\tilde{x} = \frac{3+2}{2} = \frac{5}{2} = 2.5\)</span></p>
+<h4 id="varianza">Varianza</h4>
+<h5 id="tabla-resumen-para-calculo-de-varianza">Tabla resumen para cálculo de varianza</h5>
+<table>
+<thead>
+<tr>
+<th>x (fallos)</th>
+<th>fi (lotes)</th>
+<th>fi·x</th>
+<th>fi·x²</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4</td>
+<td>8</td>
+<td>16</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3</td>
+<td>12</td>
+<td>48</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2</td>
+<td>10</td>
+<td>50</td>
+</tr>
+<tr>
+<td>6</td>
+<td>2</td>
+<td>12</td>
+<td>72</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2</td>
+<td>14</td>
+<td>98</td>
+</tr>
+<tr>
+<td><strong>Totales</strong></td>
+<td><strong>20</strong></td>
+<td><strong>63</strong></td>
+<td><strong>297</strong></td>
+</tr>
+</tbody>
+</table>
+<h5 id="formulas">Fórmulas</h5>
+<p>Media:</p>
+<p><span class="arithmatex">\(
+\bar{x} = \frac{\sum f_i \cdot x_i}{n} = \frac{63}{20} = 3.15
+\)</span></p>
+<p><strong>Varianza:</strong></p>
+<p><span class="arithmatex">\(
+s^2 = \frac{\sum f_i \cdot x_i^2}{n} - \bar{x}^2
+\)</span></p>
+<p>Sustituyendo valores:</p>
+<p><span class="arithmatex">\(
+s^2 = \frac{297}{20} - (3.15)^2 = 14.85 - 9.9225 = 4.9275
+\)</span></p>
+<h4 id="desviacion-estandar">Desviación estándar:</h4>
+<p><span class="arithmatex">\(s = \sqrt{s^2}\)</span>
+en este caso</p>
+<p><span class="arithmatex">\(
+s = \sqrt{4.9275} = 2,219797288
+\)</span></p>
+<h3 id="graficos">Gráficos</h3>
+<h4 id="frecuencias-absolutas">Frecuencias Absolutas</h4>
+<h5 id="diagrama-de-barras">Diagrama de Barras</h5>
+<p><img alt="Fallas por lote" src="../../img/barras_frecuencia_pco.png" /></p>
+<h4 id="histograma">#Histograma</h4>
+<p><img alt="Fallas por lote" src="../../img/histograma_pco.png" /></p>
+<h4 id="frecuencias-acumuladas">Frecuencias Acumuladas</h4>
+<h5 id="ojiva">Ojiva</h5>
+<p><img alt="Ojiva" src="../../img/ojiva_pco.png" /></p>
+<h2 id="2">2.</h2>
+<p>Tabla de Pesos, en Kg
+|       |       |       |       |       |       |       |       |       |       |
+|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+| 92.3  | 94.0  | 94.4  | 95.7  | 96.1  | 96.4  | 97.2  | 97.5  | 97.9  | 98.3  |
+| 98.4  | 98.5  | 98.6  | 98.9  | 99.3  | 99.6  | 100.0 | 100.0 | 100.1 | 100.3 |
+| 100.5 | 100.7 | 100.8 | 101.1 | 101.2 | 101.5 | 102.1 | 102.5 | 102.9 | 103.8 |</p>
+<p>Usamos:</p>
+<ul>
+<li>Límite inferior inicial: <span class="arithmatex">\( 92.0 \)</span></li>
+<li>Tamaño de clase: <span class="arithmatex">\( 2.0 \)</span></li>
+<li>Número total de datos: <span class="arithmatex">\( 30 \)</span></li>
+</ul>
+<p>Los intervalos de clase serán:</p>
+<ul>
+<li><span class="arithmatex">\( 92.0 \)</span> a <span class="arithmatex">\( &lt;94.0 \)</span></li>
+<li><span class="arithmatex">\( 94.0 \)</span> a <span class="arithmatex">\( &lt;96.0 \)</span></li>
+<li><span class="arithmatex">\( 96.0 \)</span> a <span class="arithmatex">\( &lt;98.0 \)</span></li>
+<li><span class="arithmatex">\( 98.0 \)</span> a <span class="arithmatex">\( &lt;100.0 \)</span></li>
+<li><span class="arithmatex">\( 100.0 \)</span> a <span class="arithmatex">\( &lt;102.0 \)</span></li>
+<li><span class="arithmatex">\( 102.0 \)</span> a <span class="arithmatex">\( &lt;104.0 \)</span></li>
+</ul>
+<p>Número total de datos:</p>
+<p><span class="arithmatex">\(
+n=30
+\)</span></p>
+<table>
+<thead>
+<tr>
+<th>Clase</th>
+<th>Intervalo (Kg)</th>
+<th><span class="arithmatex">\(fi\)</span></th>
+<th><span class="arithmatex">\(fir\)</span></th>
+<th><span class="arithmatex">\(fir\%\)</span></th>
+<th><span class="arithmatex">\(Fk\)</span></th>
+<th><span class="arithmatex">\(fkr\)</span></th>
+<th><span class="arithmatex">\(fkr\%\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>92–94</td>
+<td>1</td>
+<td>0.0333</td>
+<td>3.33%</td>
+<td>1</td>
+<td>0.0333</td>
+<td>3.33%</td>
+</tr>
+<tr>
+<td>2</td>
+<td>94–96</td>
+<td>3</td>
+<td>0.1000</td>
+<td>10.00%</td>
+<td>4</td>
+<td>0.1333</td>
+<td>13.33%</td>
+</tr>
+<tr>
+<td>3</td>
+<td>96–98</td>
+<td>5</td>
+<td>0.1667</td>
+<td>16.67%</td>
+<td>9</td>
+<td>0.3000</td>
+<td>30.00%</td>
+</tr>
+<tr>
+<td>4</td>
+<td>98–100</td>
+<td>7</td>
+<td>0.2333</td>
+<td>23.33%</td>
+<td>16</td>
+<td>0.5333</td>
+<td>53.33%</td>
+</tr>
+<tr>
+<td>5</td>
+<td>100–102</td>
+<td>10</td>
+<td>0.3333</td>
+<td>33.33%</td>
+<td>26</td>
+<td>0.8667</td>
+<td>86.67%</td>
+</tr>
+<tr>
+<td>6</td>
+<td>102–104</td>
+<td>4</td>
+<td>0.1333</td>
+<td>13.33%</td>
+<td>30</td>
+<td>1.0000</td>
+<td>100.00%</td>
+</tr>
+</tbody>
+</table>
+<p>donde:</p>
+<ul>
+<li><span class="arithmatex">\(fi\)</span>: frecuencia absoluta.</li>
+<li><span class="arithmatex">\(fir\)</span>: frecuencia relativa.</li>
+<li><span class="arithmatex">\(fir\%\)</span>: frecuencia relativa porcentual.</li>
+<li><span class="arithmatex">\(Fk\)</span>: frecuencia acumulada.</li>
+<li><span class="arithmatex">\(fkr\)</span>: frecuencia relativa acumulada.</li>
+<li><span class="arithmatex">\(fkr\%\)</span>: frecuencia relativa acumulada porcentual.</li>
+</ul>
+<p>donde:</p>
+<ul>
+<li><span class="arithmatex">\(fi\)</span>: frecuencia absoluta.</li>
+<li><span class="arithmatex">\(fir\)</span>: frecuencia relativa.</li>
+<li><span class="arithmatex">\(fir\%\)</span>: frecuencia relativa porcentual.</li>
+<li><span class="arithmatex">\(Fk\)</span>: frecuencia acumulada.</li>
+<li><span class="arithmatex">\(fkr\)</span>: frecuencia relativa acumulada.</li>
+<li><span class="arithmatex">\(fkr\%\)</span>: frecuencia relativa acumulada porcentual.</li>
+</ul>
+<h3 id="mediana_1">Mediana</h3>
+<h3 id="calculo-de-la-mediana-para-datos-agrupados">Cálculo de la mediana para datos agrupados</h3>
+<p>La posición de la mediana es:</p>
+<p><span class="arithmatex">\( \frac{N}{2} = \frac{30}{2} = 15 \)</span></p>
+<p>La frecuencia acumulada muestra que el dato 15 cae en la clase:</p>
+<p><strong>98–100</strong></p>
+<p>Por lo tanto:</p>
+<ul>
+<li><span class="arithmatex">\( L = 98 \)</span> → límite inferior de la clase mediana  </li>
+<li><span class="arithmatex">\( F_{n-1} = 9 \)</span> → frecuencia acumulada anterior a la clase mediana  </li>
+<li><span class="arithmatex">\( f_m = 7 \)</span> → frecuencia de la clase mediana  </li>
+<li><span class="arithmatex">\( c = 2 \)</span> → amplitud de clase  </li>
+<li><span class="arithmatex">\( N = 30 \)</span></li>
+</ul>
+<p>La fórmula de la mediana para datos agrupados es:</p>
+<p><span class="arithmatex">\( \tilde{x} = L + \left( \frac{\frac{N}{2} - F_{n-1}}{f_m} \right)c \)</span></p>
+<p>Sustituyendo:</p>
+<p><span class="arithmatex">\( \tilde{x} = 98 + \left( \frac{15 - 9}{7} \right)(2) \)</span></p>
+<p><span class="arithmatex">\( \tilde{x} = 98 + \left( \frac{6}{7} \right)(2) = 98 + 1.7142857 \approx 99.71 \)</span></p>
+<p>Por lo tanto, la mediana agrupada es:</p>
+<p><strong><span class="arithmatex">\( \tilde{x} \approx 99.71 \)</span></strong></p>
+<h3 id="moda">Moda</h3>
+<p><span class="arithmatex">\(\text{Mo} \)</span>
+La fórmula de la moda para datos agrupados es:</p>
+<p><span class="arithmatex">\(
+\text{Mo} = L_i + \frac{(f_m - f_{m-1})}{(f_m - f_{m-1}) + (f_m - f_{m+1})} \cdot h
+\)</span></p>
+<p>donde:</p>
+<ul>
+<li><span class="arithmatex">\(L_i\)</span>: límite inferior de la clase modal.</li>
+<li><span class="arithmatex">\(f_m\)</span>: frecuencia de la clase modal.</li>
+<li><span class="arithmatex">\(f_{m-1}\)</span>: frecuencia de la clase anterior.</li>
+<li><span class="arithmatex">\(f_{m+1}\)</span>: frecuencia de la clase siguiente.</li>
+<li><span class="arithmatex">\(h\)</span>: amplitud del intervalo.</li>
+</ul>
+<hr />
+<p>La clase modal es:</p>
+<p><span class="arithmatex">\(100\text{–}102\)</span></p>
+<p>porque tiene la mayor frecuencia.</p>
+<p>Entonces:</p>
+<ul>
+<li><span class="arithmatex">\(L_i = 100\)</span></li>
+<li><span class="arithmatex">\(f_m = 10\)</span></li>
+<li><span class="arithmatex">\(f_{m-1} = 7\)</span></li>
+<li><span class="arithmatex">\(f_{m+1} = 4\)</span></li>
+<li><span class="arithmatex">\(h = 2\)</span></li>
+</ul>
+<p>Sustituyendo:</p>
+<p><span class="arithmatex">\(
+\text{Mo} = 100 + \frac{(10-7)}{(10-7)+(10-4)} \cdot 2 = 100 + \frac{(3)}{(3)+(6)} \cdot 2
+\)</span></p>
+<p>Entonces:</p>
+<p><span class="arithmatex">\(
+\text{Mo} = 100 + \frac{3}{3+6}\cdot2 = 100 + \frac{3}{9}\cdot2
+\)</span></p>
+<p><span class="arithmatex">\(
+\text{Mo} = 100 + 0.6666
+\)</span></p>
+<p><span class="arithmatex">\(
+\text{Mo} \approx 100.66
+\)</span></p>
+<p>Por lo tanto, la moda agrupada es:</p>
+<p><span class="arithmatex">\(
+\boxed{100.67\text{ kg}}
+\)</span></p>
+<ol>
+<li>Frecuecia de Diámetros</li>
+</ol>
+<hr />
+<h2 id="3">3.</h2>
+<p>Tabla</p>
+<table>
+<thead>
+<tr>
+<th>Diametro (cm)</th>
+<th>N° de árboles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50 a 59</td>
+<td>8</td>
+</tr>
+<tr>
+<td>60 a 69</td>
+<td>10</td>
+</tr>
+<tr>
+<td>70 a 79</td>
+<td>16</td>
+</tr>
+<tr>
+<td>80 a 89</td>
+<td>14</td>
+</tr>
+<tr>
+<td>90 a 99</td>
+<td>10</td>
+</tr>
+<tr>
+<td>100 a 109</td>
+<td>5</td>
+</tr>
+<tr>
+<td>110 a 119</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="3-a-limite-inferior-de-la-6ta-clase">3 - a. Limite inferior de la 6ta clase</h3>
+<h3 id="tabla-de-frecuencias">Tabla de frecuencias</h3>
+<table>
+<thead>
+<tr>
+<th>Clase</th>
+<th>Intervalo (cm)</th>
+<th><span class="arithmatex">\(fi\)</span></th>
+<th><span class="arithmatex">\(Fk\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>50–59</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2</td>
+<td>60–69</td>
+<td>10</td>
+<td>18</td>
+</tr>
+<tr>
+<td>3</td>
+<td>70–79</td>
+<td>16</td>
+<td>34</td>
+</tr>
+<tr>
+<td>4</td>
+<td>80–89</td>
+<td>14</td>
+<td>48</td>
+</tr>
+<tr>
+<td>5</td>
+<td>90–99</td>
+<td>10</td>
+<td>58</td>
+</tr>
+<tr>
+<td>6</td>
+<td>100–109</td>
+<td>5</td>
+<td>63</td>
+</tr>
+<tr>
+<td>7</td>
+<td>110–119</td>
+<td>2</td>
+<td>65</td>
+</tr>
+</tbody>
+</table>
+<p>Total de observaciones:</p>
+<p><span class="arithmatex">\( N = 65 \)</span></p>
+<p>La pregunta solicita el <strong>límite inferior de la 6° clase</strong>.</p>
+<p>La sexta clase es: <strong>100–109</strong></p>
+<p>Por lo tanto, el límite inferior de la sexta clase es:</p>
+<p><span class="arithmatex">\( L_i = 100 \text{ cm} \)</span></p>
+<h3 id="3-b-limite-superior-de-la-4ta-clase">3 - b. Limite superior de la 4ta clase</h3>
+<p>La cuarta clase es: <strong>80–89</strong>
+<span class="arithmatex">\( L_s = 89 \text{ cm} \)</span></p>
+<h3 id="3-c-marca-de-clase-de-la-3-clase">3 - c. Marca de clase de la 3° clase</h3>
+<p>La tercera clase es:<strong>70–79</strong>
+La marca de clase se calcula como el punto medio del intervalo:
+<span class="arithmatex">\( X_i = \frac{L_i + L_s}{2} \)</span>
+Donde:- <span class="arithmatex">\( L_i = 70 \)</span>- <span class="arithmatex">\( L_s = 79 \)</span>
+Sustituyendo:<span class="arithmatex">\( X_i = \frac{70 + 79}{2} \)</span> <span class="arithmatex">\( X_i = \frac{149}{2} \)</span><span class="arithmatex">\( X_i = 74.5 \)</span>
+Por lo tanto, la marca de clase de la tercera clase es: <span class="arithmatex">\( X_i = 74.5 \text{ cm} \)</span></p>
+<h3 id="4-d-limites-reales-de-la-5ta-clase">4 - d. Limites reales de la 5ta clase</h3>
+<h3 id="calculo-de-los-limites-reales-de-la-5-clase">Cálculo de los límites reales de la 5° clase</h3>
+<p>La quinta clase es:</p>
+<p><strong>90–99</strong></p>
+<p>Para obtener los límites reales, se resta y suma la mitad de la unidad de medida.</p>
+<p>Como los datos están expresados en centímetros enteros, se utiliza:</p>
+<p><span class="arithmatex">\( \frac{1}{2} = 0.5 \)</span></p>
+<p>La fórmula es:</p>
+<ul>
+<li>Límite real inferior:</li>
+</ul>
+<p><span class="arithmatex">\( LRI = L_i - 0.5 \)</span></p>
+<ul>
+<li>Límite real superior:</li>
+</ul>
+<p><span class="arithmatex">\( LRS = L_s + 0.5 \)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\( L_i = 90 \)</span></li>
+<li><span class="arithmatex">\( L_s = 99 \)</span></li>
+</ul>
+<p>Sustituyendo:</p>
+<p><span class="arithmatex">\( LRI = 90 - 0.5 = 89.5 \)</span></p>
+<p><span class="arithmatex">\( LRS = 99 + 0.5 = 99.5 \)</span></p>
+<p>Por lo tanto, los límites reales de la quinta clase son:</p>
+<p><strong><span class="arithmatex">\( (89.5;\ 99.5) \)</span></strong></p>
+<h3 id="e-tamano-del-5to-intervalo">e. Tamaño del 5to Intervalo</h3>
+<p>La quinta clase es:</p>
+<p><strong>90–99</strong></p>
+<p>El tamaño o amplitud del intervalo de clase se calcula como:</p>
+<p><span class="arithmatex">\( c = L_s - L_i + 1 \)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\( L_i = 90 \)</span></li>
+<li><span class="arithmatex">\( L_s = 99 \)</span></li>
+</ul>
+<p>Sustituyendo:</p>
+<p><span class="arithmatex">\( c = 99 - 90 + 1 \)</span></p>
+<p><span class="arithmatex">\( c = 10 \)</span></p>
+<p>Por lo tanto, el tamaño del quinto intervalo de clase es:</p>
+<p><strong><span class="arithmatex">\( c = 10 \text{ cm} \)</span></strong></p>
+<h3 id="3-f-frecuencia-de-la-3-clase">3 - f. Frecuencia de la 3° clase</h3>
+<p>La tercera clase corresponde al intervalo:</p>
+<p><strong>70–79</strong></p>
+<p>Según la tabla de frecuencias:</p>
+<table>
+<thead>
+<tr>
+<th>Clase</th>
+<th>Intervalo (cm)</th>
+<th><span class="arithmatex">\(fi\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>70–79</td>
+<td>16</td>
+</tr>
+</tbody>
+</table>
+<p>Por lo tanto, la frecuencia de la tercera clase es:</p>
+<p><strong><span class="arithmatex">\( fi = 16 \)</span></strong></p>
+<h3 id="3-g-frecuencia-relativa-de-la-3er-clase">3 - g. Frecuencia Relativa de la 3er Clase</h3>
+<h4 id="calculo-de-la-frecuencia-relativa-de-la-3-clase">Cálculo de la frecuencia relativa de la 3° clase</h4>
+<p>La frecuencia relativa se calcula como:</p>
+<p><span class="arithmatex">\( f_{ir} = \frac{f_i}{N} \)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\( f_i = 16 \)</span> → frecuencia de la tercera clase  </li>
+<li><span class="arithmatex">\( N = 65 \)</span> → total de observaciones  </li>
+</ul>
+<p>Sustituyendo:</p>
+<p><span class="arithmatex">\( f_{ir} = \frac{16}{65} \)</span></p>
+<p><span class="arithmatex">\( f_{ir} = 0.246153 \)</span></p>
+<p>Por lo tanto, la frecuencia relativa de la tercera clase es:</p>
+<p><strong><span class="arithmatex">\( f_{ir} = 0.246153 \)</span></strong></p>
+<h3 id="3-h-intervalo-de-clase-de-mayor-frecuencia">3 - h. Intervalo de clase de mayor frecuencia</h3>
+<p>Según la tabla: </p>
+<table>
+<thead>
+<tr>
+<th>Clase</th>
+<th>Intervalo (cm)</th>
+<th><span class="arithmatex">\(fi\)</span></th>
+<th><span class="arithmatex">\(Fk\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>70–79</td>
+<td>16</td>
+<td>34</td>
+</tr>
+</tbody>
+</table>
+<p>El intervalo de clase con mayor frecuencia es la 3ra Clase</p>
+<h2 id="4">4.</h2>
+<h4 id="histograma_1">Histograma</h4>
+<p><img alt="Histograma" src="../../img/histograma_pco_4.png" /></p>
+<h4 id="poligono-de-frecuencias">Poligono de Frecuencias</h4>
+<p><img alt="Pol. de frecuecias" src="../../img/poligono_frecuencias_4.png" /></p>
+<h2 id="5">5.</h2>
+<h4 id="ojiva_1">Ojiva</h4>
+<p>La fórmula es:</p>
+<p><span class="arithmatex">\( F_k = \sum f_i \)</span></p>
+<p>Usando los datos del ejercicio:</p>
+<table>
+<thead>
+<tr>
+<th>Clase</th>
+<th>Intervalo (cm)</th>
+<th><span class="arithmatex">\(fi\)</span></th>
+<th><span class="arithmatex">\(Fk\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>50–59</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2</td>
+<td>60–69</td>
+<td>10</td>
+<td>18</td>
+</tr>
+<tr>
+<td>3</td>
+<td>70–79</td>
+<td>16</td>
+<td>34</td>
+</tr>
+<tr>
+<td>4</td>
+<td>80–89</td>
+<td>14</td>
+<td>48</td>
+</tr>
+<tr>
+<td>5</td>
+<td>90–99</td>
+<td>10</td>
+<td>58</td>
+</tr>
+<tr>
+<td>6</td>
+<td>100–109</td>
+<td>5</td>
+<td>63</td>
+</tr>
+<tr>
+<td>7</td>
+<td>110–119</td>
+<td>2</td>
+<td>65</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Ojiva" src="../../img/ojiva_pco_5.png" /></p>
+<h2 id="6">6.</h2>
+<h3 id="calculo-de-la-media-para-datos-agrupados">Cálculo de la media para datos agrupados</h3>
+<p>La media aritmética para datos agrupados se calcula con:</p>
+<p><span class="arithmatex">\( \bar{x} = \frac{\sum f_i X_i}{N} \)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\( f_i \)</span> = frecuencia de cada clase  </li>
+<li><span class="arithmatex">\( X_i \)</span> = marca de clase  </li>
+<li><span class="arithmatex">\( N \)</span> = total de observaciones  </li>
+</ul>
+<p>Tabla auxiliar:</p>
+<table>
+<thead>
+<tr>
+<th>Intervalo (cm)</th>
+<th><span class="arithmatex">\(X_i\)</span></th>
+<th><span class="arithmatex">\(f_i\)</span></th>
+<th><span class="arithmatex">\(f_i X_i\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50–59</td>
+<td>54.5</td>
+<td>8</td>
+<td>436.0</td>
+</tr>
+<tr>
+<td>60–69</td>
+<td>64.5</td>
+<td>10</td>
+<td>645.0</td>
+</tr>
+<tr>
+<td>70–79</td>
+<td>74.5</td>
+<td>16</td>
+<td>1192.0</td>
+</tr>
+<tr>
+<td>80–89</td>
+<td>84.5</td>
+<td>14</td>
+<td>1183.0</td>
+</tr>
+<tr>
+<td>90–99</td>
+<td>94.5</td>
+<td>10</td>
+<td>945.0</td>
+</tr>
+<tr>
+<td>100–109</td>
+<td>104.5</td>
+<td>5</td>
+<td>522.5</td>
+</tr>
+<tr>
+<td>110–119</td>
+<td>114.5</td>
+<td>2</td>
+<td>229.0</td>
+</tr>
+</tbody>
+</table>
+<p>Suma:</p>
+<p><span class="arithmatex">\( \sum f_i X_i = 5152.5 \)</span></p>
+<p>Total de datos:</p>
+<p><span class="arithmatex">\( N = 65 \)</span></p>
+<p>Sustituyendo:</p>
+<p><span class="arithmatex">\( \bar{x} = \frac{5152.5}{65} \)</span></p>
+<p><span class="arithmatex">\( \bar{x} = 79.2692 \)</span></p>
+<p>Por lo tanto, la media es:</p>
+<p><strong><span class="arithmatex">\( \bar{x} \approx 79.27 \text{ cm} \)</span></strong></p>
+<hr />
+<h3 id="calculo-de-la-mediana-para-datos-agrupados_1">Cálculo de la mediana para datos agrupados</h3>
+<p>La mediana para datos agrupados se calcula con:</p>
+<p><span class="arithmatex">\( \tilde{x} = L_i + \left( \frac{\frac{N}{2} - F_{n-1}}{f_m} \right)c \)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\( N = 65 \)</span></li>
+<li><span class="arithmatex">\( \frac{N}{2} = 32.5 \)</span></li>
+<li><span class="arithmatex">\( L_i \)</span> = límite inferior aparente de la clase mediana  </li>
+<li><span class="arithmatex">\( F_{n-1} \)</span> = frecuencia acumulada anterior a la clase mediana  </li>
+<li><span class="arithmatex">\( f_m \)</span> = frecuencia de la clase mediana  </li>
+<li><span class="arithmatex">\( c \)</span> = amplitud del intervalo  </li>
+</ul>
+<p>Tabla de frecuencias acumuladas:</p>
+<table>
+<thead>
+<tr>
+<th>Intervalo (cm)</th>
+<th><span class="arithmatex">\(fi\)</span></th>
+<th><span class="arithmatex">\(Fk\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50–59</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>60–69</td>
+<td>10</td>
+<td>18</td>
+</tr>
+<tr>
+<td>70–79</td>
+<td>16</td>
+<td>34</td>
+</tr>
+<tr>
+<td>80–89</td>
+<td>14</td>
+<td>48</td>
+</tr>
+<tr>
+<td>90–99</td>
+<td>10</td>
+<td>58</td>
+</tr>
+<tr>
+<td>100–109</td>
+<td>5</td>
+<td>63</td>
+</tr>
+<tr>
+<td>110–119</td>
+<td>2</td>
+<td>65</td>
+</tr>
+</tbody>
+</table>
+<p>Como <span class="arithmatex">\( 32.5 \)</span> cae dentro de la clase <strong>70–79</strong>, esa es la clase mediana.</p>
+<p>Por lo tanto:</p>
+<ul>
+<li><span class="arithmatex">\( L_i = 70 \)</span>  </li>
+<li><span class="arithmatex">\( F_{n-1} = 18 \)</span>  </li>
+<li><span class="arithmatex">\( f_m = 16 \)</span>  </li>
+<li><span class="arithmatex">\( c = 10 \)</span>  </li>
+</ul>
+<p>Sustituyendo:</p>
+<p><span class="arithmatex">\( \tilde{x} = 70 + \left( \frac{32.5 - 18}{16} \right)(10) \)</span></p>
+<p><span class="arithmatex">\( \tilde{x} = 70 + \left( \frac{14.5}{16} \right)(10) \)</span></p>
+<p><span class="arithmatex">\( \tilde{x} = 70 + 9.0625 \)</span></p>
+<p><span class="arithmatex">\( \tilde{x} = 79.0625 \)</span></p>
+<p>Por lo tanto, la mediana es:</p>
+<p><strong><span class="arithmatex">\( \tilde{x} \approx 79.06 \text{ cm} \)</span></strong></p>
+<h2 id="warning-consultar-este-punto-limite-real-vs-limite-aparente-diferencia-con-guia">&gt; <strong>WARNING:</strong> Consultar este punto: Límite real vs. límite aparente, diferencia con guía</h2>
+<h3 id="calculo-de-la-moda-para-datos-agrupados">Cálculo de la moda para datos agrupados</h3>
+<p>La moda se calcula con:</p>
+<p><span class="arithmatex">\( Mo = L_i + \left( \frac{d_1}{d_1 + d_2} \right)c \)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\( L_i \)</span> = límite inferior de la clase modal  </li>
+<li><span class="arithmatex">\( d_1 = f_m - f_{anterior} \)</span>  </li>
+<li><span class="arithmatex">\( d_2 = f_m - f_{siguiente} \)</span>  </li>
+<li><span class="arithmatex">\( c \)</span> = amplitud del intervalo  </li>
+</ul>
+<p>Tabla:</p>
+<table>
+<thead>
+<tr>
+<th>Intervalo (cm)</th>
+<th><span class="arithmatex">\(fi\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50–59</td>
+<td>8</td>
+</tr>
+<tr>
+<td>60–69</td>
+<td>10</td>
+</tr>
+<tr>
+<td>70–79</td>
+<td>16</td>
+</tr>
+<tr>
+<td>80–89</td>
+<td>14</td>
+</tr>
+<tr>
+<td>90–99</td>
+<td>10</td>
+</tr>
+<tr>
+<td>100–109</td>
+<td>5</td>
+</tr>
+<tr>
+<td>110–119</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>Clase modal: <strong>70–79</strong></p>
+<p>Datos:</p>
+<ul>
+<li><span class="arithmatex">\( L_i = 70 \)</span></li>
+<li><span class="arithmatex">\( f_m = 16 \)</span></li>
+<li><span class="arithmatex">\( f_{anterior} = 10 \)</span></li>
+<li><span class="arithmatex">\( f_{siguiente} = 14 \)</span></li>
+<li><span class="arithmatex">\( c = 9 \)</span></li>
+</ul>
+<p>Cálculos:</p>
+<p><span class="arithmatex">\( d_1 = 16 - 10 = 6 \)</span></p>
+<p><span class="arithmatex">\( d_2 = 16 - 14 = 2 \)</span></p>
+<p>Sustituyendo:</p>
+<p><span class="arithmatex">\( Mo = 70 + \left( \frac{6}{6 + 2} \right)(9) \)</span></p>
+<p><span class="arithmatex">\( Mo = 70 + \left( \frac{6}{8} \right)(9) \)</span></p>
+<p><span class="arithmatex">\( Mo = 70 + 6.75 \)</span></p>
+<p><span class="arithmatex">\( Mo = 76.75 \)</span></p>
+<h5 id="resultado">Resultado:</h5>
+<p><span class="arithmatex">\( Mo = 76.75 \text{ cm} \)</span></p>
+<hr />
+<h3 id="calculo-del-cuartil-1-q1-para-datos-agrupados">Cálculo del Cuartil 1 (Q1) para datos agrupados</h3>
+<p>El cuartil 1 se calcula con:</p>
+<p><span class="arithmatex">\( Q_1 = L_i + \left( \frac{\frac{N}{4} - F_{n-1}}{f_m} \right)c \)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\( N = 65 \)</span></li>
+<li><span class="arithmatex">\( \frac{N}{4} = 16.25 \)</span></li>
+</ul>
+<hr />
+<h4 id="a-ubicacion-del-cuartil">A. Ubicación del cuartil</h4>
+<p>Frecuencia acumulada:</p>
+<table>
+<thead>
+<tr>
+<th>Intervalo</th>
+<th><span class="arithmatex">\(Fk\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50–59</td>
+<td>8</td>
+</tr>
+<tr>
+<td>60–69</td>
+<td>18</td>
+</tr>
+</tbody>
+</table>
+<p>Como:</p>
+<p><span class="arithmatex">\( 8 &lt; 16.25 \le 18 \)</span></p>
+<p>la clase de <span class="arithmatex">\(Q_1\)</span> es:</p>
+<p><strong>60–69</strong></p>
+<hr />
+<h4 id="b-datos-de-la-clase">B. Datos de la clase</h4>
+<ul>
+<li><span class="arithmatex">\( L_i = 60 \)</span></li>
+<li><span class="arithmatex">\( F_{n-1} = 8 \)</span></li>
+<li><span class="arithmatex">\( f_m = 10 \)</span></li>
+<li><span class="arithmatex">\( c = 9 \)</span></li>
+</ul>
+<hr />
+<h4 id="c-sustitucion">C. Sustitución</h4>
+<p><span class="arithmatex">\( Q_1 = 60 + \left( \frac{16.25 - 8}{10} \right)(9) \)</span></p>
+<p><span class="arithmatex">\( Q_1 = 60 + (0.825)(9) \)</span></p>
+<p><span class="arithmatex">\( Q_1 = 60 + 7.425 \)</span></p>
+<p><span class="arithmatex">\( Q_1 = 67.425 \)</span></p>
+<hr />
+<h5 id="resultado_1">Resultado</h5>
+<p><span class="arithmatex">\( Q_1 = 67.425 \text{ cm} \)</span></p>
+<hr />
+<h3 id="calculo-del-cuartil-3-q3-para-datos-agrupados">Cálculo del Cuartil 3 (Q3) para datos agrupados</h3>
+<p>El cuartil 3 se calcula con:</p>
+<p><span class="arithmatex">\( Q_3 = L_i + \left( \frac{\frac{3N}{4} - F_{n-1}}{f_m} \right)c \)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\( N = 65 \)</span></li>
+<li><span class="arithmatex">\( \frac{3N}{4} = 48.75 \)</span></li>
+</ul>
+<hr />
+<h4 id="a-ubicacion-del-cuartil_1">A. Ubicación del cuartil</h4>
+<p>Frecuencia acumulada:</p>
+<table>
+<thead>
+<tr>
+<th>Intervalo</th>
+<th><span class="arithmatex">\(Fk\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>80–89</td>
+<td>48</td>
+</tr>
+<tr>
+<td>90–99</td>
+<td>58</td>
+</tr>
+</tbody>
+</table>
+<p>Como:</p>
+<p><span class="arithmatex">\( 48 &lt; 48.75 \le 58 \)</span></p>
+<p>la clase de <span class="arithmatex">\(Q_3\)</span> es:</p>
+<p><strong>90–99</strong></p>
+<hr />
+<h4 id="b-datos-de-la-clase_1">B. Datos de la clase</h4>
+<ul>
+<li><span class="arithmatex">\( L_i = 90 \)</span></li>
+<li><span class="arithmatex">\( F_{n-1} = 48 \)</span></li>
+<li><span class="arithmatex">\( f_m = 10 \)</span></li>
+<li><span class="arithmatex">\( c = 9 \)</span></li>
+</ul>
+<hr />
+<h4 id="c-sustitucion_1">C. Sustitución</h4>
+<p><span class="arithmatex">\( Q_3 = 90 + \left( \frac{48.75 - 48}{10} \right)(9) \)</span></p>
+<p><span class="arithmatex">\( Q_3 = 90 + (0.075)(9) \)</span></p>
+<p><span class="arithmatex">\( Q_3 = 90 + 0.675 \)</span></p>
+<p><span class="arithmatex">\( Q_3 = 90.675 \)</span></p>
+<hr />
+<h5 id="resultado_2">Resultado</h5>
+<p><span class="arithmatex">\( Q_3 = 90.675 \text{ cm} \)</span></p>
+<hr />
+<h3 id="calculo-del-decil-8-d_8-para-datos-agrupados">Cálculo del Decil 8 (<span class="arithmatex">\(D_8\)</span>) para datos agrupados</h3>
+<p>El decil 8 se calcula con:</p>
+<p><span class="arithmatex">\( D_8 = L_i + \left( \frac{\frac{8N}{10} - F_{n-1}}{f_m} \right)c \)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\( N = 65 \)</span></li>
+<li><span class="arithmatex">\( \frac{8N}{10} = 52 \)</span></li>
+</ul>
+<hr />
+<h4 id="a-ubicacion-del-decil">A. Ubicación del decil</h4>
+<p>Frecuencia acumulada:</p>
+<table>
+<thead>
+<tr>
+<th>Intervalo</th>
+<th><span class="arithmatex">\(Fk\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>80–89</td>
+<td>48</td>
+</tr>
+<tr>
+<td>90–99</td>
+<td>58</td>
+</tr>
+</tbody>
+</table>
+<p>Como:</p>
+<p><span class="arithmatex">\( 48 &lt; 52 \le 58 \)</span></p>
+<p>la clase de <span class="arithmatex">\(D_8\)</span> es:</p>
+<p><strong>90–99</strong></p>
+<hr />
+<h4 id="b-datos-de-la-clase_2">B. Datos de la clase</h4>
+<ul>
+<li><span class="arithmatex">\( L_i = 90 \)</span></li>
+<li><span class="arithmatex">\( F_{n-1} = 48 \)</span></li>
+<li><span class="arithmatex">\( f_m = 10 \)</span></li>
+<li><span class="arithmatex">\( c = 9 \)</span></li>
+</ul>
+<hr />
+<h4 id="c-sustitucion_2">C. Sustitución</h4>
+<p><span class="arithmatex">\( D_8 = 90 + \left( \frac{52 - 48}{10} \right)(9) \)</span></p>
+<p><span class="arithmatex">\( D_8 = 90 + (0.4)(9) \)</span></p>
+<p><span class="arithmatex">\( D_8 = 90 + 3.6 \)</span></p>
+<p><span class="arithmatex">\( D_8 = 93.6 \)</span></p>
+<hr />
+<h5 id="resultado_3">Resultado</h5>
+<p><span class="arithmatex">\( D_8 = 93.6 \text{ cm} \)</span></p>
+<hr />
+<h3 id="calculo-del-percentil-14-p_14-para-datos-agrupados">Cálculo del percentil 14 (<span class="arithmatex">\(P_{14}\)</span>) para datos agrupados</h3>
+<p>El percentil 14 se calcula con:</p>
+<p><span class="arithmatex">\( P_{14} = L_i + \left( \frac{\frac{14N}{100} - F_{n-1}}{f_m} \right)c \)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\( N = 65 \)</span></li>
+<li><span class="arithmatex">\( \frac{14N}{100} = 9.1 \)</span></li>
+</ul>
+<hr />
+<h4 id="a-ubicacion-del-percentil">A. Ubicación del percentil</h4>
+<p>Frecuencia acumulada:</p>
+<table>
+<thead>
+<tr>
+<th>Intervalo</th>
+<th><span class="arithmatex">\(Fk\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50–59</td>
+<td>8</td>
+</tr>
+<tr>
+<td>60–69</td>
+<td>18</td>
+</tr>
+</tbody>
+</table>
+<p>Como:</p>
+<p><span class="arithmatex">\( 8 &lt; 9.1 \le 18 \)</span></p>
+<p>la clase de <span class="arithmatex">\(P_{14}\)</span> es:</p>
+<p><strong>60–69</strong></p>
+<hr />
+<h4 id="b-datos-de-la-clase_3">B. Datos de la clase</h4>
+<ul>
+<li><span class="arithmatex">\( L_i = 60 \)</span></li>
+<li><span class="arithmatex">\( F_{n-1} = 8 \)</span></li>
+<li><span class="arithmatex">\( f_m = 10 \)</span></li>
+<li><span class="arithmatex">\( c = 9 \)</span></li>
+</ul>
+<hr />
+<h4 id="c-sustitucion_3">C. Sustitución</h4>
+<p><span class="arithmatex">\( P_{14} = 60 + \left( \frac{9.1 - 8}{10} \right)(9) \)</span></p>
+<p><span class="arithmatex">\( P_{14} = 60 + (0.11)(9) \)</span></p>
+<p><span class="arithmatex">\( P_{14} = 60 + 0.99 \)</span></p>
+<p><span class="arithmatex">\( P_{14} = 60.99 \)</span></p>
+<hr />
+<h4 id="resultado_4">Resultado</h4>
+<p><span class="arithmatex">\( P_{14} = 60.99 \text{ cm} \)</span></p>
+<hr />
+<h3 id="calculo-del-percentil-74-p_74-para-datos-agrupados">Cálculo del percentil 74 (<span class="arithmatex">\(P_{74}\)</span>) para datos agrupados</h3>
+<p>El percentil 74 se calcula con:</p>
+<p><span class="arithmatex">\( P_{74} = L_i + \left( \frac{\frac{74N}{100} - F_{n-1}}{f_m} \right)c \)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\( N = 65 \)</span></li>
+<li><span class="arithmatex">\( \frac{74N}{100} = 48.1 \)</span></li>
+</ul>
+<hr />
+<h4 id="a-ubicacion-del-percentil_1">A. Ubicación del percentil</h4>
+<p>Frecuencia acumulada:</p>
+<table>
+<thead>
+<tr>
+<th>Intervalo</th>
+<th><span class="arithmatex">\(Fk\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>80–89</td>
+<td>48</td>
+</tr>
+<tr>
+<td>90–99</td>
+<td>58</td>
+</tr>
+</tbody>
+</table>
+<p>Como:</p>
+<p><span class="arithmatex">\( 48 &lt; 48.1 \le 58 \)</span></p>
+<p>la clase de <span class="arithmatex">\(P_{74}\)</span> es:</p>
+<p><strong>90–99</strong></p>
+<hr />
+<h4 id="b-datos-de-la-clase_4">B. Datos de la clase</h4>
+<ul>
+<li><span class="arithmatex">\( L_i = 90 \)</span></li>
+<li><span class="arithmatex">\( F_{n-1} = 48 \)</span></li>
+<li><span class="arithmatex">\( f_m = 10 \)</span></li>
+<li><span class="arithmatex">\( c = 9 \)</span></li>
+</ul>
+<hr />
+<h4 id="c-sustitucion_4">C. Sustitución</h4>
+<p><span class="arithmatex">\( P_{74} = 90 + \left( \frac{48.1 - 48}{10} \right)(9) \)</span></p>
+<p><span class="arithmatex">\( P_{74} = 90 + (0.01)(9) \)</span></p>
+<p><span class="arithmatex">\( P_{74} = 90 + 0.09 \)</span></p>
+<p><span class="arithmatex">\( P_{74} = 90.09 \)</span></p>
+<hr />
+<h5 id="resultado_5">Resultado</h5>
+<p><span class="arithmatex">\( P_{74} = 90.09 \text{ cm} \)</span></p>
+<hr />
+<h3 id="calculo-de-la-varianza-para-datos-agrupados">Cálculo de la varianza para datos agrupados</h3>
+<p>La varianza se calcula con:</p>
+<p><span class="arithmatex">\( \sigma^2 = \frac{\sum f_i (X_i - \bar{x})^2}{N} \)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\( X_i \)</span> = marca de clase  </li>
+<li><span class="arithmatex">\( f_i \)</span> = frecuencia  </li>
+<li><span class="arithmatex">\( N = 65 \)</span></li>
+</ul>
+<p>Primero calculamos la media con precisión completa:</p>
+<p><span class="arithmatex">\( \bar{x} = \frac{\sum f_i X_i}{N} \)</span></p>
+<p>Tabla auxiliar:</p>
+<table>
+<thead>
+<tr>
+<th>Intervalo (cm)</th>
+<th><span class="arithmatex">\(X_i\)</span></th>
+<th><span class="arithmatex">\(f_i\)</span></th>
+<th><span class="arithmatex">\(f_iX_i\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50–59</td>
+<td>54.5</td>
+<td>8</td>
+<td>436.0</td>
+</tr>
+<tr>
+<td>60–69</td>
+<td>64.5</td>
+<td>10</td>
+<td>645.0</td>
+</tr>
+<tr>
+<td>70–79</td>
+<td>74.5</td>
+<td>16</td>
+<td>1192.0</td>
+</tr>
+<tr>
+<td>80–89</td>
+<td>84.5</td>
+<td>14</td>
+<td>1183.0</td>
+</tr>
+<tr>
+<td>90–99</td>
+<td>94.5</td>
+<td>10</td>
+<td>945.0</td>
+</tr>
+<tr>
+<td>100–109</td>
+<td>104.5</td>
+<td>5</td>
+<td>522.5</td>
+</tr>
+<tr>
+<td>110–119</td>
+<td>114.5</td>
+<td>2</td>
+<td>229.0</td>
+</tr>
+</tbody>
+</table>
+<p>Suma:</p>
+<p><span class="arithmatex">\( \sum f_iX_i = 5152.5 \)</span></p>
+<p>Entonces:</p>
+<p><span class="arithmatex">\( \bar{x} = \frac{5152.5}{65} = 79.26923076923077 \)</span></p>
+<hr />
+<h3 id="tabla-de-calculo-de-varianza">Tabla de cálculo de varianza</h3>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(X_i\)</span></th>
+<th><span class="arithmatex">\(f_i\)</span></th>
+<th><span class="arithmatex">\(X_i-\bar{x}\)</span></th>
+<th><span class="arithmatex">\((X_i-\bar{x})^2\)</span></th>
+<th><span class="arithmatex">\(f_i(X_i-\bar{x})^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>54.5</td>
+<td>8</td>
+<td>-24.7692307692</td>
+<td>613.5133136095</td>
+<td>4908.1065088760</td>
+</tr>
+<tr>
+<td>64.5</td>
+<td>10</td>
+<td>-14.7692307692</td>
+<td>218.1286982249</td>
+<td>2181.2869822490</td>
+</tr>
+<tr>
+<td>74.5</td>
+<td>16</td>
+<td>-4.7692307692</td>
+<td>22.7440828402</td>
+<td>363.9053254432</td>
+</tr>
+<tr>
+<td>84.5</td>
+<td>14</td>
+<td>5.2307692308</td>
+<td>27.3594674556</td>
+<td>383.0325443784</td>
+</tr>
+<tr>
+<td>94.5</td>
+<td>10</td>
+<td>15.2307692308</td>
+<td>231.9748520710</td>
+<td>2319.7485207100</td>
+</tr>
+<tr>
+<td>104.5</td>
+<td>5</td>
+<td>25.2307692308</td>
+<td>636.5902366864</td>
+<td>3182.9511834320</td>
+</tr>
+<tr>
+<td>114.5</td>
+<td>2</td>
+<td>35.2307692308</td>
+<td>1241.2056213018</td>
+<td>2482.4112426036</td>
+</tr>
+</tbody>
+</table>
+<p>Suma:</p>
+<p><span class="arithmatex">\( \sum f_i(X_i-\bar{x})^2 = 15821.5383076922 \)</span></p>
+<p>Finalmente:</p>
+<p><span class="arithmatex">\( \sigma^2 = \frac{15821.5383076922}{65} \)</span></p>
+<p><span class="arithmatex">\( \sigma^2 = 243.4082816568 \)</span></p>
+<h4 id="resultado_6">Resultado</h4>
+<p><span class="arithmatex">\( \sigma^2 \approx 243.40828 \text{ cm}^2 \)</span></p>
+<hr />
+<h3 id="calculo-de-la-desviacion-estandar-para-datos-agrupados">Cálculo de la desviación estándar para datos agrupados</h3>
+<p>La desviación estándar se calcula como la raíz cuadrada de la varianza:</p>
+<p><span class="arithmatex">\( \sigma = \sqrt{\sigma^2} \)</span></p>
+<p>Usando la varianza obtenida:</p>
+<p><span class="arithmatex">\( \sigma^2 = 243.40828 \)</span></p>
+<p>Sustituyendo:</p>
+<p><span class="arithmatex">\( \sigma = \sqrt{243.40828} \)</span></p>
+<p><span class="arithmatex">\( \sigma = 15.60155 \)</span></p>
+<h4 id="resultado_7">Resultado</h4>
+<p><span class="arithmatex">\( \sigma \approx 15.60155 \text{ cm} \)</span></p>
+<h2 id="7-trabajadores">7. Trabajadores</h2>
+<p>N = 1965</p>
+<table>
+<thead>
+<tr>
+<th>Rango de edades</th>
+<th>N° de Trabajadores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>60-64</td>
+<td>373</td>
+</tr>
+<tr>
+<td>65-69</td>
+<td>733</td>
+</tr>
+<tr>
+<td>70-74</td>
+<td>489</td>
+</tr>
+<tr>
+<td>75-79</td>
+<td>240</td>
+</tr>
+<tr>
+<td>80-84</td>
+<td>102</td>
+</tr>
+<tr>
+<td>85-89</td>
+<td>28</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>1965</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculo-del-cuartil-1-q_1-para-datos-agrupados">Cálculo del cuartil 1 (<span class="arithmatex">\(Q_1\)</span>) para datos agrupados</h3>
+<p>El cuartil 1 se calcula con:</p>
+<p><span class="arithmatex">\( Q_1 = L_i + \left( \frac{\frac{N}{4} - F_{n-1}}{f_m} \right)c \)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\( N = 1965 \)</span></li>
+<li><span class="arithmatex">\( \frac{N}{4} = 491.25 \)</span></li>
+</ul>
+<h4 id="a-tabla-de-frecuencias-acumuladas">A. Tabla de frecuencias acumuladas</h4>
+<table>
+<thead>
+<tr>
+<th>Intervalo</th>
+<th><span class="arithmatex">\(fi\)</span></th>
+<th><span class="arithmatex">\(Fk\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>60–64</td>
+<td>373</td>
+<td>373</td>
+</tr>
+<tr>
+<td>65–69</td>
+<td>733</td>
+<td>1106</td>
+</tr>
+<tr>
+<td>70–74</td>
+<td>489</td>
+<td>1595</td>
+</tr>
+<tr>
+<td>75–79</td>
+<td>240</td>
+<td>1835</td>
+</tr>
+<tr>
+<td>80–84</td>
+<td>102</td>
+<td>1937</td>
+</tr>
+<tr>
+<td>85–89</td>
+<td>28</td>
+<td>1965</td>
+</tr>
+</tbody>
+</table>
+<p>Como:</p>
+<p><span class="arithmatex">\( 373 &lt; 491.25 \le 1106 \)</span></p>
+<p>la clase de <span class="arithmatex">\(Q_1\)</span> es:</p>
+<p><strong>65–69</strong></p>
+<h4 id="b-datos-de-la-clase_5">B. Datos de la clase</h4>
+<ul>
+<li><span class="arithmatex">\( L_i = 65 \)</span></li>
+<li><span class="arithmatex">\( F_{n-1} = 373 \)</span></li>
+<li><span class="arithmatex">\( f_m = 733 \)</span></li>
+<li><span class="arithmatex">\( c = 4 \)</span></li>
+</ul>
+<h4 id="c-sustitucion_5">C. Sustitución</h4>
+<p><span class="arithmatex">\( Q_1 = 65 + \left( \frac{491.25 - 373}{733} \right)(4) \)</span></p>
+<p><span class="arithmatex">\( Q_1 = 65 + \left( \frac{118.25}{733} \right)(4) \)</span></p>
+<p><span class="arithmatex">\( Q_1 = 65 + 0.645293 \)</span></p>
+<p><span class="arithmatex">\( Q_1 = 65.645293 \)</span></p>
+<h4 id="resultado_8">Resultado</h4>
+<p><span class="arithmatex">\( Q_1 = 65.645293 \text{ años} \)</span></p>
+<hr />
+<h3 id="calculo-del-decil-6-d_6">Cálculo del decil 6 (<span class="arithmatex">\(D_6\)</span>)</h3>
+<p>El decil 6 se calcula con:</p>
+<p><span class="arithmatex">\( D_6 = L_i + \left( \frac{\frac{6N}{10} - F_{n-1}}{f_m} \right)c \)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\( N = 1965 \)</span></li>
+<li><span class="arithmatex">\( \frac{6N}{10} = 1179 \)</span></li>
+</ul>
+<h4 id="a-ubicacion-del-decil_1">A. Ubicación del decil</h4>
+<p>Frecuencia acumulada:</p>
+<table>
+<thead>
+<tr>
+<th>Intervalo</th>
+<th><span class="arithmatex">\(Fk\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>65–69</td>
+<td>1106</td>
+</tr>
+<tr>
+<td>70–74</td>
+<td>1595</td>
+</tr>
+</tbody>
+</table>
+<p>Como:</p>
+<p><span class="arithmatex">\( 1106 &lt; 1179 \le 1595 \)</span></p>
+<p>la clase de <span class="arithmatex">\(D_6\)</span> es:</p>
+<p><strong>70–74</strong></p>
+<h4 id="b-datos-de-la-clase_6">B. Datos de la clase</h4>
+<ul>
+<li><span class="arithmatex">\( L_i = 70 \)</span></li>
+<li><span class="arithmatex">\( F_{n-1} = 1106 \)</span></li>
+<li><span class="arithmatex">\( f_m = 489 \)</span></li>
+<li><span class="arithmatex">\( c = 4 \)</span></li>
+</ul>
+<h4 id="c-sustitucion_6">C. Sustitución</h4>
+<p><span class="arithmatex">\( D_6 = 70 + \left( \frac{1179 - 1106}{489} \right)(4) \)</span></p>
+<p><span class="arithmatex">\( D_6 = 70 + \left( \frac{73}{489} \right)(4) \)</span></p>
+<p><span class="arithmatex">\( D_6 = 70 + 0.597137 \)</span></p>
+<p><span class="arithmatex">\( D_6 = 70.597137 \)</span></p>
+<h4 id="resultado_9">Resultado</h4>
+<p><span class="arithmatex">\( D_6 = 70.597137 \text{ años} \)</span></p>
+<hr />
+<h2 id="8">8.</h2>
+<p>Alturas en Metros - Plantas de Maiz</p>
+<h3 id="data">Data</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1,06</td>
+<td>1,16</td>
+<td>1,21</td>
+<td>0,96</td>
+<td>1,17</td>
+<td>1,11</td>
+<td>1,03</td>
+<td>1,11</td>
+<td>1,20</td>
+<td>1,26</td>
+</tr>
+<tr>
+<td>1,14</td>
+<td>1,15</td>
+<td>1,07</td>
+<td>1,18</td>
+<td>1,22</td>
+<td>0,97</td>
+<td>1,20</td>
+<td>1,11</td>
+<td>1,14</td>
+<td>1,09</td>
+</tr>
+<tr>
+<td>1,18</td>
+<td>1,12</td>
+<td>1,15</td>
+<td>1,05</td>
+<td>1,24</td>
+<td>1,12</td>
+<td>1,19</td>
+<td>1,03</td>
+<td>1,19</td>
+<td>1,10</td>
+</tr>
+<tr>
+<td>1,33</td>
+<td>1,04</td>
+<td>1,18</td>
+<td>1,12</td>
+<td>1,19</td>
+<td>1,08</td>
+<td>1,27</td>
+<td>1,30</td>
+<td>1,13</td>
+<td>1,13</td>
+</tr>
+</tbody>
+</table>
+<p>Realizar la correspondiente distribución de frecuencias.
+Ordena: [ 0,96, 0,97, 1,03, 1,03, 1,04, 1,05, 1,06, 1,07, 1,08, 1,09, 1,10, 1,11, 1,11, 1,11, 1,12, 1,12, 1,12, 1,13, 1,13, 1,14, 1,14, 1,15, 1,15, 1,16, 1,17, 1,18, 1,18, 1,18, 1,19, 1,19, 1,19, 1,20, 1,20, 1,21, 1,22, 1,24, 1,26, 1,27, 1,30, 1,33 ]</p>
+<h2 id="de-donde-salen-las-decisiones">¿De dónde salen las decisiones?</h2>
+<hr />
+<h2 id="1-rango">1. Rango</h2>
+<p><span class="arithmatex">\(
+R=x_{\max}-x_{\min}
+\)</span></p>
+<p>Se usa porque el rango mide la <strong>dispersión total de los datos</strong>, es decir, desde el mínimo hasta el máximo.</p>
+<p>Es válido porque:</p>
+<ul>
+<li>define el “intervalo total” de trabajo</li>
+<li>es la base para construir clases</li>
+</ul>
+<hr />
+<h2 id="2-numero-de-clases-sturges">2. Número de clases (Sturges)</h2>
+<p><span class="arithmatex">\(
+k=1+3{,}322\log(n)
+\)</span></p>
+<p>Se usa porque es una <strong>regla empírica estándar</strong> para decidir cuántos intervalos usar en datos agrupados.</p>
+<p>Es válida porque:</p>
+<ul>
+<li>equilibra detalle vs. simplificación</li>
+<li>evita demasiadas o muy pocas clases</li>
+<li>funciona bien para <span class="arithmatex">\(n\)</span> moderado</li>
+</ul>
+<hr />
+<h2 id="3-amplitud-de-clase">3. Amplitud de clase</h2>
+<p><span class="arithmatex">\(
+A=\frac{R}{k}
+\)</span></p>
+<p>Se usa porque reparte el rango total en partes iguales.</p>
+<p>Es válida porque:</p>
+<ul>
+<li>garantiza clases uniformes</li>
+<li>permite cubrir todo el rango sin huecos</li>
+</ul>
+<hr />
+<h2 id="4-construccion-de-clases">4. Construcción de clases</h2>
+<p><span class="arithmatex">\(
+L_{i+1}=L_i + A
+\)</span></p>
+<p>Se usa porque cada intervalo debe tener la <strong>misma amplitud</strong>.</p>
+<p>Es válida porque:</p>
+<ul>
+<li>asegura continuidad</li>
+<li>evita solapamientos</li>
+<li>mantiene estructura ordenada</li>
+</ul>
+<hr />
+<h2 id="5-forma-de-cada-clase">5. Forma de cada clase</h2>
+<p><span class="arithmatex">\(
+\text{Clase}_i=[L_i,\ L_i + A)
+\)</span></p>
+<p>Se usa esta notación porque:</p>
+<ul>
+<li>incluye el límite inferior</li>
+<li>excluye el superior para evitar duplicación de datos</li>
+</ul>
+<p>Es válida porque:</p>
+<ul>
+<li>cada dato cae en una sola clase</li>
+<li>evita ambigüedad en conteos</li>
+</ul>
+<hr />
+<h2 id="que-es-r-k-y-a-y-de-donde-salen">¿Qué es <span class="arithmatex">\(R\)</span>, <span class="arithmatex">\(k\)</span> y <span class="arithmatex">\(A\)</span> y de dónde salen?</h2>
+<hr />
+<h2 id="1-rango-r">1. Rango <span class="arithmatex">\(R\)</span></h2>
+<p><span class="arithmatex">\(
+R=x_{\max}-x_{\min}
+\)</span></p>
+<h3 id="que-es">¿Qué es?</h3>
+<p>Es la <strong>distancia total</strong> que cubren los datos.</p>
+<h3 id="de-donde-sale">¿De dónde sale?</h3>
+<p>Sale de restar:</p>
+<ul>
+<li>valor más grande</li>
+<li>valor más pequeño</li>
+</ul>
+<h3 id="por-que-se-usa">¿Por qué se usa?</h3>
+<p>Porque define el <strong>espacio total</strong> que deben cubrir las clases.</p>
+<hr />
+<h2 id="2-numero-de-clases-k">2. Número de clases <span class="arithmatex">\(k\)</span></h2>
+<p><span class="arithmatex">\(
+k=1+3{,}322\log(n)
+\)</span></p>
+<h3 id="que-es_1">¿Qué es?</h3>
+<p>Es la cantidad de intervalos en los que se agrupan los datos.</p>
+<h3 id="de-donde-sale_1">¿De dónde sale?</h3>
+<p>De la <strong>regla de Sturges</strong> (criterio estadístico estándar).</p>
+<h3 id="por-que-se-usa_1">¿Por qué se usa?</h3>
+<p>Porque equilibra:</p>
+<ul>
+<li>demasiado detalle (muchas clases)</li>
+<li>poca información (pocas clases)</li>
+</ul>
+<hr />
+<h2 id="3-amplitud-a">3. Amplitud <span class="arithmatex">\(A\)</span></h2>
+<p><span class="arithmatex">\(
+A=\frac{R}{k}
+\)</span></p>
+<h3 id="que-es_2">¿Qué es?</h3>
+<p>Es el <strong>tamaño de cada intervalo</strong>.</p>
+<h3 id="de-donde-sale_2">¿De dónde sale?</h3>
+<p>De dividir el rango total entre el número de clases.</p>
+<h3 id="por-que-se-usa_2">¿Por qué se usa?</h3>
+<p>Porque asegura que:</p>
+<ul>
+<li>todas las clases sean iguales</li>
+<li>los datos cubran todo el rango sin huecos</li>
+</ul>
+<hr />
+<h2 id="resumen-logico">Resumen lógico</h2>
+<p><span class="arithmatex">\(
+\text{Datos} \rightarrow R \rightarrow k \rightarrow A \rightarrow \text{Clases}
+\)</span></p>
+<hr />
+<p><span class="arithmatex">\(
+\bar{x}=\frac{\sum x_i}{n}=\frac{44{,}88}{40}=1{,}122
+\)</span></p>
+<p><span class="arithmatex">\(
+Me=\frac{x_{20}+x_{21}}{2}=\frac{1{,}14+1{,}14}{2}=1{,}14
+\)</span></p>
+<p><span class="arithmatex">\(
+Mo=1{,}11,\ 1{,}12,\ 1{,}18,\ 1{,}19
+\)</span></p>
+<p><span class="arithmatex">\(
+Q_3=\frac{3(n+1)}{4}=\frac{3(41)}{4}=30{,}75 \Rightarrow Q_3 \approx 1{,}19
+\)</span></p>
+<p><span class="arithmatex">\(
+D_8=\frac{8(n+1)}{10}=\frac{8(41)}{10}=32{,}8 \Rightarrow D_8 \approx 1{,}20
+\)</span></p>
+<p><span class="arithmatex">\(
+P_{24}=\frac{24(n+1)}{100}=\frac{24(41)}{100}=9{,}84 \Rightarrow P_{24} \approx 1{,}09
+\)</span></p>
+<p><span class="arithmatex">\(
+\sigma^2=\frac{1}{n}\sum (x_i-\bar{x})^2 \approx 0{,}0041
+\)</span></p>
+<p><span class="arithmatex">\(
+\sigma=\sqrt{\sigma^2} \approx 0{,}064
+\)</span></p>
+<h2 id="9">9.</h2>
+<p>Faltan 8 y 9</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

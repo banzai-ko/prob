@@ -1,0 +1,52 @@
+site_name: Probabilidad
+
+theme:
+  name: material
+
+  palette:
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+        
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+nav:
+  - Inicio: indice.md
+
+  - Teoría:
+      - Resumen: Teoria/1ra_Parte/Probabilidad_teoria.md
+      - Unidad 1: Teoria/1ra_Parte/unidad_1_probabilidad.md
+      - Unidad 2: Teoria/1ra_Parte/unidad_2_combinatorias.md
+      - Unidad 3: Teoria/1ra_Parte/unidad_3_teoria_prob.md
+      - Unidad 4: Teoria/1ra_Parte/unidad_4_sucesos_indep.md
+      - Variable Aleatoria: Teoria/2da_Parte/variable_aleatoria.md
+      - Clase 29/5: Teoria/2da_Parte/clase29_5.md
+
+  - Prácticos:
+      - Unidad 1: Practico/unidad_1_practico.md
+      - Unidad 2: Practico/unidad_2_practico.md
+      - Unidad 3: Practico/unidad_3_practico.md
+      - Unidad 4: Practico/unidad_4_practico.md
+
+  - Parciales:
+      - PP: Parciales/PP.md
+      - PP2: Parciales/PP2.md
+      - Primer Parcial 2026: Parciales/Primer_parcial_2026.md
+
+  - Glosario: Glosario.md
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

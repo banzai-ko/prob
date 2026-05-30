@@ -32,8 +32,13 @@
 | Combinación con repetición | \( CR(n,r) \) | \( \frac{(n+r-1)!}{r!(n-1)!} \) |
 |
 ---
-## Unidad 3
 
+## Unidad 3
+Lorem impsun
+
+
+## Unidad 4
+Lorem impsun
 ### Axiomas y Teoremas de Probabilidad
 
 | Tipo | Nombre | Símbolo | Fórmula |
