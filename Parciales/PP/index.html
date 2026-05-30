@@ -1,0 +1,2105 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Practico/unidad_4_practico/">
+      
+      
+        <link rel="next" href="../PP2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>PP - Probabilidad</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modelo-primer-parcial" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Probabilidad" class="md-header__button md-logo" aria-label="Probabilidad" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Probabilidad
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PP
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="cyan"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Probabilidad" class="md-nav__button md-logo" aria-label="Probabilidad" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Probabilidad
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Teoría
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Teoria/1ra_Parte/Probabilidad_teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resumen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Teoria/1ra_Parte/unidad_1_probabilidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Teoria/1ra_Parte/unidad_2_combinatorias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Teoria/1ra_Parte/unidad_3_teoria_prob/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Teoria/1ra_Parte/unidad_4_sucesos_indep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Teoria/2da_Parte/variable_aleatoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variable Aleatoria
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Teoria/2da_Parte/clase29_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clase 29/5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prácticos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Prácticos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Practico/unidad_1_practico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Practico/unidad_2_practico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Practico/unidad_3_practico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Practico/unidad_4_practico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parciales
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parciales
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PP
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problema-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 1.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problema 1.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formula-de-combinacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fórmula de combinación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#casos-posibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Casos posibles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#casos-favorables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Casos favorables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#probabilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probabilidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probabilidades-de-sacar-una-canica-negra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probabilidades de sacar una canica negra
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#si-las-urnas-se-eligen-al-azar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Si las urnas se eligen al azar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probabilidad-de-sacar-3-blancas-de-u_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probabilidad de sacar 3 blancas de \(U_2\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probabilidad-total-de-sacar-3-blancas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probabilidad total de sacar 3 blancas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Probabilidad total de sacar 3 blancas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desde-u_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desde \(U_1\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desde-u_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desde \(U_2\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desde-u_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desde \(U_3\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desde-u_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desde \(U_4\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probabilidad-total" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probabilidad total
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teorema-de-bayes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teorema de Bayes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PP2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PP2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Primer_parcial_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Primer Parcial 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Glosario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problema-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 1.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problema 1.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formula-de-combinacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fórmula de combinación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#casos-posibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Casos posibles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#casos-favorables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Casos favorables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#probabilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probabilidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probabilidades-de-sacar-una-canica-negra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probabilidades de sacar una canica negra
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#si-las-urnas-se-eligen-al-azar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Si las urnas se eligen al azar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probabilidad-de-sacar-3-blancas-de-u_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probabilidad de sacar 3 blancas de \(U_2\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probabilidad-total-de-sacar-3-blancas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probabilidad total de sacar 3 blancas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Probabilidad total de sacar 3 blancas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desde-u_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desde \(U_1\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desde-u_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desde \(U_2\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desde-u_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desde \(U_3\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desde-u_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desde \(U_4\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probabilidad-total" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probabilidad total
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teorema-de-bayes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teorema de Bayes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="modelo-primer-parcial">Modelo Primer Parcial</h1>
+<h2 id="problema-1">Problema 1.</h2>
+<p>De una baraja de 52 cartas se sacan 3 cartas al azar.(sin reemplazo). ¿Cuál es la posibilidad de obtener exactamente 1 rey, 1 reina y 1 sota?(sin importar el orden)</p>
+<h3 id="formula-de-combinacion">Fórmula de combinación</h3>
+<p><span class="arithmatex">\(
+C(n,r)=\frac{n!}{r!(n-r)!}
+\)</span></p>
+<hr />
+<h3 id="casos-posibles">Casos posibles</h3>
+<p><span class="arithmatex">\(
+C(52,3)=\frac{52!}{3!(52-3)!}=22100
+\)</span></p>
+<hr />
+<h3 id="casos-favorables">Casos favorables</h3>
+<p><span class="arithmatex">\(
+C(4,1)\cdot C(4,1)\cdot C(4,1)
+\)</span></p>
+<p><span class="arithmatex">\(
+=4\cdot4\cdot4=64
+\)</span></p>
+<hr />
+<h3 id="probabilidad">Probabilidad</h3>
+<p><span class="arithmatex">\(
+P=\frac{\text{casos favorables}}{\text{casos posibles}}
+\)</span></p>
+<p><span class="arithmatex">\(
+P=\frac{64}{22100}\approx0{,}0029
+\)</span></p>
+<h2 id="2">2.</h2>
+<p>Cada urna contiene canicas negras y blancas. Su composición es la siguiente: 
+U1: 5 blancas, 5 negras
+U2: 8 blancas, 2 negras
+U3: 3 blancas, 7 negras
+U4: 6 blancas, 4 negras</p>
+<p>a - ¿Cuál es la prob de sacar una canica negra?
+b - Se elige una urna al azar y se sacan 3 canicas blancas sin reposicion¿Cuál es la prob que venga de U2?</p>
+<h2 id="probabilidades-de-sacar-una-canica-negra">Probabilidades de sacar una canica negra</h2>
+<p><span class="arithmatex">\(
+P(N|U_1)=\frac{5}{10}=0{,}5
+\)</span></p>
+<p><span class="arithmatex">\(
+P(N|U_2)=\frac{2}{10}=0{,}2
+\)</span></p>
+<p><span class="arithmatex">\(
+P(N|U_3)=\frac{7}{10}=0{,}7
+\)</span></p>
+<p><span class="arithmatex">\(
+P(N|U_4)=\frac{4}{10}=0{,}4
+\)</span></p>
+<hr />
+<h2 id="si-las-urnas-se-eligen-al-azar">Si las urnas se eligen al azar</h2>
+<p><span class="arithmatex">\(
+P(U_i)=\frac{1}{4}
+\)</span></p>
+<p>Entonces:</p>
+<p><span class="arithmatex">\(
+P(N)=\sum P(U_i)\cdot P(N|U_i)
+\)</span></p>
+<p><span class="arithmatex">\(
+P(N)=
+\frac{1}{4}(0{,}5)
++
+\frac{1}{4}(0{,}2)
++
+\frac{1}{4}(0{,}7)
++
+\frac{1}{4}(0{,}4)
+\)</span></p>
+<p><span class="arithmatex">\(
+P(N)=0{,}125+0{,}05+0{,}175+0{,}1
+\)</span></p>
+<p><span class="arithmatex">\(
+P(N)=0{,}45
+\)</span></p>
+<hr />
+<pre><code class="language-mermaid">flowchart LR
+
+A((Inicio))
+
+A -- 1/4 --&gt; U1[U1]
+A -- 1/4 --&gt; U2[U2]
+A -- 1/4 --&gt; U3[U3]
+A -- 1/4 --&gt; U4[U4]
+
+U1 -- 5/10 --&gt; N1[Negra]
+U1 -- 5/10 --&gt; B1[Blanca]
+
+U2 -- 2/10 --&gt; N2[Negra]
+U2 -- 8/10 --&gt; B2[Blanca]
+
+U3 -- 7/10 --&gt; N3[Negra]
+U3 -- 3/10 --&gt; B3[Blanca]
+
+U4 -- 4/10 --&gt; N4[Negra]
+U4 -- 6/10 --&gt; B4[Blanca]
+</code></pre>
+<h2 id="datos">Datos</h2>
+<p><span class="arithmatex">\(
+P(U_i)=\frac{1}{4}
+\)</span></p>
+<p>Urna <span class="arithmatex">\(U_2\)</span>:</p>
+<p><span class="arithmatex">\(
+8 \text{ blancas},\ 2 \text{ negras}
+\)</span></p>
+<hr />
+<h2 id="probabilidad-de-sacar-3-blancas-de-u_2">Probabilidad de sacar 3 blancas de <span class="arithmatex">\(U_2\)</span></h2>
+<p><span class="arithmatex">\(
+P(3B|U_2)=\frac{8}{10}\cdot\frac{7}{9}\cdot\frac{6}{8}
+\)</span></p>
+<p><span class="arithmatex">\(
+P(3B|U_2)=\frac{7}{15}
+\)</span></p>
+<hr />
+<h2 id="probabilidad-total-de-sacar-3-blancas">Probabilidad total de sacar 3 blancas</h2>
+<p><span class="arithmatex">\(
+P(3B)=\sum P(U_i)\cdot P(3B|U_i)
+\)</span></p>
+<hr />
+<h3 id="desde-u_1">Desde <span class="arithmatex">\(U_1\)</span></h3>
+<p><span class="arithmatex">\(
+P(3B|U_1)=\frac{5}{10}\cdot\frac{4}{9}\cdot\frac{3}{8}=\frac{1}{12}
+\)</span></p>
+<hr />
+<h3 id="desde-u_2">Desde <span class="arithmatex">\(U_2\)</span></h3>
+<p><span class="arithmatex">\(
+P(3B|U_2)=\frac{7}{15}
+\)</span></p>
+<hr />
+<h3 id="desde-u_3">Desde <span class="arithmatex">\(U_3\)</span></h3>
+<p><span class="arithmatex">\(
+P(3B|U_3)=\frac{3}{10}\cdot\frac{2}{9}\cdot\frac{1}{8}=\frac{1}{120}
+\)</span></p>
+<hr />
+<h3 id="desde-u_4">Desde <span class="arithmatex">\(U_4\)</span></h3>
+<p><span class="arithmatex">\(
+P(3B|U_4)=\frac{6}{10}\cdot\frac{5}{9}\cdot\frac{4}{8}=\frac{1}{6}
+\)</span></p>
+<hr />
+<h2 id="probabilidad-total">Probabilidad total</h2>
+<p><span class="arithmatex">\(
+P(3B)=
+\frac{1}{4}\left(
+\frac{1}{12}
++\frac{7}{15}
++\frac{1}{120}
++\frac{1}{6}
+\right)
+\)</span></p>
+<p><span class="arithmatex">\(
+P(3B)=\frac{29}{160}
+\)</span></p>
+<hr />
+<h2 id="teorema-de-bayes">Teorema de Bayes</h2>
+<p><span class="arithmatex">\(
+P(U_2|3B)=\frac{P(U_2)\cdot P(3B|U_2)}{P(3B)}
+\)</span></p>
+<p><span class="arithmatex">\(
+P(U_2|3B)=
+\frac{
+\frac{1}{4}\cdot\frac{7}{15}
+}{
+\frac{29}{160}
+}
+\)</span></p>
+<p><span class="arithmatex">\(
+P(U_2|3B)=\frac{56}{87}
+\)</span></p>
+<p><span class="arithmatex">\(
+P(U_2|3B)\approx0{,}644
+\)</span></p>
+<hr />
+<h2 id="resultado">Resultado</h2>
+<p><span class="arithmatex">\(
+\boxed{P(U_2|3B)\approx64{,}4\%}
+\)</span></p>
+<h2 id="3">3.</h2>
+<p>Tres jugadores D, E y F tienen las siguientes probabilidades de encestar un tiro libre D = 88%, E= 60%, F= 40% de las veces, si cada uno lanza un tiro libre calcula la probabilidad de que exactamenr dos de ellos encesten.</p>
+<p>Sea:</p>
+<ul>
+<li><span class="arithmatex">\( D \)</span>: “el jugador D encesta”</li>
+<li><span class="arithmatex">\( E \)</span>: “el jugador E encesta”</li>
+<li><span class="arithmatex">\( F \)</span>: “el jugador F encesta”</li>
+</ul>
+<p>Datos:</p>
+<p><span class="arithmatex">\(
+P(D)=0.88
+\)</span></p>
+<p><span class="arithmatex">\(
+P(E)=0.60
+\)</span></p>
+<p><span class="arithmatex">\(
+P(F)=0.40
+\)</span></p>
+<p>Las probabilidades de fallar son:</p>
+<p><span class="arithmatex">\(
+P(D^c)=1-0.88=0.12
+\)</span></p>
+<p><span class="arithmatex">\(
+P(E^c)=1-0.60=0.40
+\)</span></p>
+<p><span class="arithmatex">\(
+P(F^c)=1-0.40=0.60
+\)</span></p>
+<p>Queremos calcular la probabilidad de que exactamente dos jugadores encesten.</p>
+<p>Los casos posibles son:</p>
+<ol>
+<li>D y E encestan, F falla.</li>
+</ol>
+<p><span class="arithmatex">\(
+P(D \cap E \cap F^c)=0.88 \times 0.60 \times 0.60
+\)</span></p>
+<p><span class="arithmatex">\(
+P(D \cap E \cap F^c)=0.3168
+\)</span></p>
+<ol>
+<li>D y F encestan, E falla.</li>
+</ol>
+<p><span class="arithmatex">\(
+P(D \cap E^c \cap F)=0.88 \times 0.40 \times 0.40
+\)</span></p>
+<p><span class="arithmatex">\(
+P(D \cap E^c \cap F)=0.1408
+\)</span></p>
+<ol>
+<li>E y F encestan, D falla.</li>
+</ol>
+<p><span class="arithmatex">\(
+P(D^c \cap E \cap F)=0.12 \times 0.60 \times 0.40
+\)</span></p>
+<p><span class="arithmatex">\(
+P(D^c \cap E \cap F)=0.0288
+\)</span></p>
+<p>Sumamos los tres casos:</p>
+<p><span class="arithmatex">\(
+P(\text{exactamente dos encestan})=
+0.3168+0.1408+0.0288
+\)</span></p>
+<p><span class="arithmatex">\(
+P(\text{exactamente dos encestan})=0.4864
+\)</span></p>
+<p>Respuesta:</p>
+<p><span class="arithmatex">\(
+\boxed{0.4864=48.64\%}
+\)</span></p>
+<h2 id="4">4.</h2>
+<p>En una universidad se sabe que el 60% de los estudiantes cursa materias optativas. El 25% participa en proyectos de invetigación. El 70% cursa materias optativas o participa en investigación. Calcular la probalidad de elegir: 
+a. Un estudiante que participa en investigación dado que cursa materias optativas.
+b. Un estudiante que participa en investigación dado que NO cursa materias optativas.
+Sea:</p>
+<ul>
+<li><span class="arithmatex">\( O \)</span>: “el estudiante cursa materias optativas”</li>
+<li><span class="arithmatex">\( I \)</span>: “el estudiante participa en investigación”</li>
+</ul>
+<p>Datos:</p>
+<p><span class="arithmatex">\(
+P(O)=0.60
+\)</span></p>
+<p><span class="arithmatex">\(
+P(I)=0.25
+\)</span></p>
+<p><span class="arithmatex">\(
+P(O \cup I)=0.70
+\)</span></p>
+<p>Usamos la fórmula:</p>
+<p><span class="arithmatex">\(
+P(O \cup I)=P(O)+P(I)-P(O \cap I)
+\)</span></p>
+<p>Sustituyendo:</p>
+<p><span class="arithmatex">\(
+0.70=0.60+0.25-P(O \cap I)
+\)</span></p>
+<p><span class="arithmatex">\(
+P(O \cap I)=0.60+0.25-0.70
+\)</span></p>
+<p><span class="arithmatex">\(
+P(O \cap I)=0.15
+\)</span></p>
+<h1 id="a-probabilidad-de-que-participe-en-investigacion-dado-que-cursa-optativas">a) Probabilidad de que participe en investigación dado que cursa optativas</h1>
+<p>Usamos probabilidad condicional:</p>
+<p><span class="arithmatex">\(
+P(I \mid O)=\frac{P(O \cap I)}{P(O)}
+\)</span></p>
+<p>Sustituyendo:</p>
+<p><span class="arithmatex">\(
+P(I \mid O)=\frac{0.15}{0.60}
+\)</span></p>
+<p><span class="arithmatex">\(
+P(I \mid O)=0.25
+\)</span></p>
+<p>Respuesta:</p>
+<p><span class="arithmatex">\(
+\boxed{P(I \mid O)=0.25=25\%}
+\)</span></p>
+<h1 id="b-probabilidad-de-que-participe-en-investigacion-dado-que-no-cursa-optativas">b. Probabilidad de que participe en investigación dado que NO cursa optativas</h1>
+<p>Primero calculamos:</p>
+<p><span class="arithmatex">\(
+P(O^c)=1-0.60=0.40
+\)</span></p>
+<p>Luego:</p>
+<p><span class="arithmatex">\(
+P(I \cap O^c)=P(I)-P(O \cap I)
+\)</span></p>
+<p><span class="arithmatex">\(
+P(I \cap O^c)=0.25-0.15=0.10
+\)</span></p>
+<p>Ahora aplicamos probabilidad condicional:</p>
+<p><span class="arithmatex">\(
+P(I \mid O^c)=\frac{P(I \cap O^c)}{P(O^c)}
+\)</span></p>
+<p>Sustituyendo:</p>
+<p><span class="arithmatex">\(
+P(I \mid O^c)=\frac{0.10}{0.40}
+\)</span></p>
+<p><span class="arithmatex">\(
+P(I \mid O^c)=0.25
+\)</span></p>
+<p>Respuesta:</p>
+<p><span class="arithmatex">\(
+\boxed{P(I \mid O^c)=0.25=25\%}
+\)</span></p>
+<h2 id="5">5.</h2>
+<p>En una empresa se midió el tiempo que los empleados tardan en completar una tarea específica(en minutos): los tiempos registrados en una muestrad de 40 empleados fueron los siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>Tiempo (minutos)</th>
+<th>f</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[10;15)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>[15;20)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>[20;25)</td>
+<td>14</td>
+</tr>
+<tr>
+<td>[25;30)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>[30;35)</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Hallar</strong></p>
+<h3 id="a">a.</h3>
+<p>Media, mediana e intervalo modal</p>
+<h3 id="b">b.</h3>
+<p>Varianza y desvío estándard</p>
+<h3 id="c">c.</h3>
+<p>Cuartil 1</p>
+<h1 id="datos_1">Datos</h1>
+<table>
+<thead>
+<tr>
+<th>Tiempo (minutos)</th>
+<th><span class="arithmatex">\(f\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\([10;15)\)</span></td>
+<td>4</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([15;20)\)</span></td>
+<td>9</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([20;25)\)</span></td>
+<td>14</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([25;30)\)</span></td>
+<td>7</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([30;35)\)</span></td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p>Total de datos:</p>
+<p><span class="arithmatex">\(
+N=4+9+14+7+6=40
+\)</span></p>
+<p>Calculamos las marcas de clase:</p>
+<table>
+<thead>
+<tr>
+<th>Intervalo</th>
+<th>Marca de clase <span class="arithmatex">\(x_i\)</span></th>
+<th><span class="arithmatex">\(f_i\)</span></th>
+<th><span class="arithmatex">\(f_i x_i\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\([10;15)\)</span></td>
+<td>12.5</td>
+<td>4</td>
+<td>50</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([15;20)\)</span></td>
+<td>17.5</td>
+<td>9</td>
+<td>157.5</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([20;25)\)</span></td>
+<td>22.5</td>
+<td>14</td>
+<td>315</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([25;30)\)</span></td>
+<td>27.5</td>
+<td>7</td>
+<td>192.5</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([30;35)\)</span></td>
+<td>32.5</td>
+<td>6</td>
+<td>195</td>
+</tr>
+</tbody>
+</table>
+<p><span class="arithmatex">\(
+\sum f_i x_i = 910
+\)</span></p>
+<h1 id="a-media-mediana-e-intervalo-modal">a) Media, mediana e intervalo modal</h1>
+<h2 id="media">Media</h2>
+<p><span class="arithmatex">\(
+\bar{x}=\frac{\sum f_i x_i}{N}
+\)</span></p>
+<p><span class="arithmatex">\(
+\bar{x}=\frac{910}{40}
+\)</span></p>
+<p><span class="arithmatex">\(
+\bar{x}=22.75
+\)</span></p>
+<p>Respuesta:</p>
+<p><span class="arithmatex">\(
+\boxed{\bar{x}=22.75 \text{ minutos}}
+\)</span></p>
+<hr />
+<h2 id="mediana">Mediana</h2>
+<p>Calculamos las frecuencias acumuladas:</p>
+<table>
+<thead>
+<tr>
+<th>Intervalo</th>
+<th><span class="arithmatex">\(f_i\)</span></th>
+<th><span class="arithmatex">\(F_i\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\([10;15)\)</span></td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([15;20)\)</span></td>
+<td>9</td>
+<td>13</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([20;25)\)</span></td>
+<td>14</td>
+<td>27</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([25;30)\)</span></td>
+<td>7</td>
+<td>34</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([30;35)\)</span></td>
+<td>6</td>
+<td>40</td>
+</tr>
+</tbody>
+</table>
+<p><span class="arithmatex">\(
+\frac{N}{2}=\frac{40}{2}=20
+\)</span></p>
+<p>El dato 20 pertenece al intervalo:</p>
+<p><span class="arithmatex">\(
+[20;25)
+\)</span></p>
+<p>Ese es el intervalo mediano.</p>
+<p>Usamos:</p>
+<p><span class="arithmatex">\(
+Me=L+\left(\frac{\frac{N}{2}-F_{anterior}}{f_m}\right)c
+\)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\(L=20\)</span></li>
+<li><span class="arithmatex">\(F_{anterior}=13\)</span></li>
+<li><span class="arithmatex">\(f_m=14\)</span></li>
+<li><span class="arithmatex">\(c=5\)</span></li>
+</ul>
+<p>Sustituyendo:</p>
+<p><span class="arithmatex">\(
+Me=20+\left(\frac{20-13}{14}\right)5
+\)</span></p>
+<p><span class="arithmatex">\(
+Me=20+\left(\frac{7}{14}\right)5
+\)</span></p>
+<p><span class="arithmatex">\(
+Me=20+2.5
+\)</span></p>
+<p><span class="arithmatex">\(
+Me=22.5
+\)</span></p>
+<p>Respuesta:</p>
+<p><span class="arithmatex">\(
+\boxed{Me=22.5 \text{ minutos}}
+\)</span></p>
+<hr />
+<h2 id="intervalo-modal">Intervalo modal</h2>
+<p>La mayor frecuencia es:</p>
+<p><span class="arithmatex">\(
+f=14
+\)</span></p>
+<p>Entonces el intervalo modal es:</p>
+<p><span class="arithmatex">\(
+\boxed{[20;25)}
+\)</span></p>
+<h1 id="b-varianza-y-desvio-estandar">b) Varianza y desvío estándar</h1>
+<p>Calculamos:</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(x_i\)</span></th>
+<th><span class="arithmatex">\(f_i\)</span></th>
+<th><span class="arithmatex">\(x_i-\bar{x}\)</span></th>
+<th><span class="arithmatex">\((x_i-\bar{x})^2\)</span></th>
+<th><span class="arithmatex">\(f_i(x_i-\bar{x})^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12.5</td>
+<td>4</td>
+<td>-10.25</td>
+<td>105.0625</td>
+<td>420.25</td>
+</tr>
+<tr>
+<td>17.5</td>
+<td>9</td>
+<td>-5.25</td>
+<td>27.5625</td>
+<td>248.0625</td>
+</tr>
+<tr>
+<td>22.5</td>
+<td>14</td>
+<td>-0.25</td>
+<td>0.0625</td>
+<td>0.875</td>
+</tr>
+<tr>
+<td>27.5</td>
+<td>7</td>
+<td>4.75</td>
+<td>22.5625</td>
+<td>157.9375</td>
+</tr>
+<tr>
+<td>32.5</td>
+<td>6</td>
+<td>9.75</td>
+<td>95.0625</td>
+<td>570.375</td>
+</tr>
+</tbody>
+</table>
+<p><span class="arithmatex">\(
+\sum f_i(x_i-\bar{x})^2=1397.5
+\)</span></p>
+<h2 id="varianza">Varianza</h2>
+<p><span class="arithmatex">\(
+\sigma^2=\frac{\sum f_i(x_i-\bar{x})^2}{N}
+\)</span></p>
+<p><span class="arithmatex">\(
+\sigma^2=\frac{1397.5}{40}
+\)</span></p>
+<p><span class="arithmatex">\(
+\sigma^2=34.9375
+\)</span></p>
+<p>Respuesta:</p>
+<p><span class="arithmatex">\(
+\boxed{\sigma^2=34.94}
+\)</span></p>
+<hr />
+<h2 id="desvio-estandar">Desvío estándar</h2>
+<p><span class="arithmatex">\(
+\sigma=\sqrt{34.9375}
+\)</span></p>
+<p><span class="arithmatex">\(
+\sigma\approx5.91
+\)</span></p>
+<p>Respuesta:</p>
+<p><span class="arithmatex">\(
+\boxed{\sigma\approx5.91 \text{ minutos}}
+\)</span></p>
+<h1 id="c-cuartil-1">c. Cuartil 1</h1>
+<p><span class="arithmatex">\(
+\frac{N}{4}=\frac{40}{4}=10
+\)</span></p>
+<p>El dato 10 pertenece al intervalo(ver fk):</p>
+<p><span class="arithmatex">\(
+[15;20)
+\)</span></p>
+<p>Usamos:</p>
+<p><span class="arithmatex">\(
+Q_1=L+\left(\frac{\frac{N}{4}-F_{anterior}}{f_i}\right)c
+\)</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="arithmatex">\(L=15\)</span></li>
+<li><span class="arithmatex">\(F_{anterior}=4\)</span></li>
+<li><span class="arithmatex">\(f_i=9\)</span></li>
+<li><span class="arithmatex">\(c=5\)</span></li>
+</ul>
+<p>Sustituyendo:</p>
+<p><span class="arithmatex">\(
+Q_1=15+\left(\frac{10-4}{9}\right)5
+\)</span></p>
+<p><span class="arithmatex">\(
+Q_1=15+\left(\frac{6}{9}\right)5
+\)</span></p>
+<p><span class="arithmatex">\(
+Q_1=15+3.33
+\)</span></p>
+<p><span class="arithmatex">\(
+Q_1\approx18.33
+\)</span></p>
+<p>Respuesta:</p>
+<p><span class="arithmatex">\(
+\boxed{Q_1\approx18.33 \text{ minutos}}
+\)</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
