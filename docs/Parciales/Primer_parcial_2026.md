@@ -1,12 +1,12 @@
 # Primer Parcial
 
-## 1
+## 1)
 Los datos que se dan a continuación corresponden a los pesos en Kg. de ochenta personas:
 
 a. Obténgase una distribución de datos en intervalos de amplitud t, siendo el primer intervalo 
-`[50;55)`
-b. Calcule el porcentaje de personas de peso menor que 65 Kg.
-c. ¿Cuántas personas tienen peso mayor o igual que 70kg. Pero menor que 85?
+`[50;55)`       
+b. Calcule el porcentaje de personas de peso menor que 65 Kg.       
+c. ¿Cuántas personas tienen peso mayor o igual que 70kg. Pero menor que 85?     
 
     60 66 77 70 66 68 57 70 66 52 75 65 69 71 58 66 67 74 61
 
@@ -18,16 +18,16 @@ c. ¿Cuántas personas tienen peso mayor o igual que 70kg. Pero menor que 85?
 
     66 62 63 66
 
-## 2 
+## 2)
 En un concurso sobre innovaciones tecnológicas se han presentado 10 equipos con sus ideas. Los equipos compiten entre ellos para elegir un ganador, un segundo y un tercer puesto. ¿Cuántas ternas se pueden formar?
 
-## 3
+## 3)
 ¿Cuántos numeros de 3 cifras se pueden formar con los dígitos 0, 1, 2, 3, 4 y 5?
 
-## 4 
+## 4)
 En un estudio sobre las preferencias de color sobre la indumentaria, arrojó que el 4% de los hombres y 1% de las mujeres tienen inclinación por el color negro. Además, 60% de los encuestados son mujeres. Ahora bien, si se selecciona al azar una persona encuestada y tiene preferencia por el color negro ¿Cuál es la probabilidad de que esta persona sea mujer?
 
-## 5
+## 5)
 
 Un banco tiene cinco jóvenes ejecutivos en la casa matriz. Cada año en abril, selecciona al azar uno de estos cinco y lo transfiere como gerente a una de sus filiales. El lugar del elegido lo cubre con un nuevo joven ejecutivo. Calcula la probabilidad de que el joven ejecutivo dado:
 a. Permanezca exactamente dos años en la casa matriz
@@ -42,16 +42,16 @@ b. Permanezca tres años o menos en la casa matriz
 
 Se tienen \(n=80\) observaciones.
 
-| Intervalo | $f_i$ |
-|------------|------:|
-| $[50,55)$ | 3 |
-| $[55,60)$ | 7 |
-| $[60,65)$ | 16 |
-| $[65,70)$ | 25 |
-| $[70,75)$ | 16 |
-| $[75,80)$ | 8 |
-| $[80,85)$ | 5 |
-| **Total** | **80** |
+| Intervalo | \(f_i\)  | \(f_{ir}\) |
+|------------|---------|------------|
+| \([50,55)\) | 3      | 0.0375     |
+| \([55,60)\) | 7      | 0.0875     |
+| \([60,65)\) | 16     | 0.2000     |
+| \([65,70)\) | 25     | 0.3125     |
+| \([70,75)\) | 16     | 0.2000     |
+| \([75,80)\) | 8      | 0.1000     |
+| \([80,85)\) | 5      | 0.0625     |
+| **Total**   | **80** | **1.0000** |
 
 ### Fórmula utilizada
 
