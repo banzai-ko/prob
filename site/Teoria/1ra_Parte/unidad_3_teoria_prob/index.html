@@ -1328,22 +1328,21 @@ Calcula la prob de elegir un fumador y que este resulte ser morocho.</p>
 <p><strong>Ejemplo:</strong></p>
 <p>3 máquinas A,B y C producen respectivamente 50%, 30% y 20% del número total de artículos de una fábrica.
 Los porcentajes de despefectos de producción de estas máquinas son 3%, 4% y 5%. Si se selecciona un artículo al azar, hallar la prob de que el artículo sea defectuoso.</p>
-<pre><code class="language-mermaid">flowchart LR
+<pre class="mermaid"><code>flowchart LR
     F((F))
 
-    F --&gt; A[&quot;A (0.5)&quot;]
-    F --&gt; B[&quot;B (0.3)&quot;]
-    F --&gt; C[&quot;C (0.2)&quot;]
+    F --&gt; A["A (0.5)"]
+    F --&gt; B["B (0.3)"]
+    F --&gt; C["C (0.2)"]
 
-    A --&gt; A_B[&quot;B (0.97)&quot;]
-    A --&gt; A_D[&quot;D (0.03)&quot;]
+    A --&gt; A_B["B (0.97)"]
+    A --&gt; A_D["D (0.03)"]
 
-    B --&gt; B_B[&quot;B (0.96)&quot;]
-    B --&gt; B_D[&quot;D (0.04)&quot;]
+    B --&gt; B_B["B (0.96)"]
+    B --&gt; B_D["D (0.04)"]
 
-    C --&gt; C_B[&quot;B (0.95)&quot;]
-    C --&gt; C_D[&quot;D (0.05)&quot;]
-</code></pre>
+    C --&gt; C_B["B (0.95)"]
+    C --&gt; C_D["D (0.05)"]</code></pre>
 <p><span class="arithmatex">\(P(D) = 0.5 \cdot 0.03 + 0.3 \cdot 0.04 + 0.2 \cdot 0.05\)</span></p>
 <h1 id="teorema-de-bayes">Teorema de Bayes</h1>
 <p>Continuando con el ejemplo anterior. Suponemos que se selecciona un artículo al azar y este resulta defectuoso ¿Cuál es la probabilidad de que el artículo seleccionado fue producido por la máquina A?</p>
@@ -1409,6 +1408,8 @@ Los porcentajes de despefectos de producción de estas máquinas son 3%, 4% y 5%
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
         <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
       
     
   </body>

@@ -951,23 +951,22 @@
 
 <h1 id="unidad-3">Unidad 3</h1>
 <h2 id="40-dado">40. Dado:</h2>
-<pre><code class="language-mermaid">flowchart LR
+<p><pre class="mermaid"><code>flowchart LR
     F((Dado))
 
-    F --&gt; D1[&quot;1-&gt; (1/6)&quot;]
-    F --&gt; D23[&quot;2 o 3-&gt; (2/6)&quot;]
-    F --&gt; D456[&quot;4,5,6-&gt; (3/6)&quot;]
+    F --&gt; D1["1-&gt; (1/6)"]
+    F --&gt; D23["2 o 3-&gt; (2/6)"]
+    F --&gt; D456["4,5,6-&gt; (3/6)"]
 
-    D1 --&gt; D1_B[&quot;4B (4/6)&quot;]
-    D1 --&gt; D1_N[&quot;2N (2/6)&quot;]
+    D1 --&gt; D1_B["4B (4/6)"]
+    D1 --&gt; D1_N["2N (2/6)"]
 
-    D23 --&gt; D23_B[&quot;3B (3/5)&quot;]
-    D23 --&gt; D23_A[&quot;2A (2/5)&quot;]
+    D23 --&gt; D23_B["3B (3/5)"]
+    D23 --&gt; D23_A["2A (2/5)"]
 
-    D456 --&gt; D456_B[&quot;1B (1/5)&quot;]
-    D456 --&gt; D456_N[&quot;4N (4/5)&quot;]
-</code></pre>
-<p><span class="arithmatex">\(P(N) = \frac{1}{6} \cdot \frac{2}{6} + \frac{3}{6} \cdot \frac{4}{5} = \frac{41}{90}\)</span></p>
+    D456 --&gt; D456_B["1B (1/5)"]
+    D456 --&gt; D456_N["4N (4/5)"]</code></pre>
+<span class="arithmatex">\(P(N) = \frac{1}{6} \cdot \frac{2}{6} + \frac{3}{6} \cdot \frac{4}{5} = \frac{41}{90}\)</span></p>
 
 
 
@@ -1025,6 +1024,8 @@
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
         <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../javascripts/mermaid-init.js"></script>
       
     
   </body>
