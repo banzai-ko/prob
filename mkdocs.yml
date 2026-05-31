@@ -20,12 +20,12 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Light mode
-        
+
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 nav:
-  - Inicio: indice.md
+  - Inicio: index.md
 
   - Teoría:
       - Resumen: Teoria/1ra_Parte/Probabilidad_teoria.md
