@@ -86,7 +86,7 @@ Expresión porcentual de la frecuencia relativa acumulada
 </div>
 
 <div style="flex: 2;">
-  <img src="./img/barras_frecuencia_absoluta.png" alt="Histograma" width="500">
+  <img src="../../img/barras_frecuencia_absoluta.png" alt="Histograma" width="500">
 </div>
 
 </div>
@@ -114,7 +114,7 @@ Expresión porcentual de la frecuencia relativa acumulada
   </div>
 
   <div style="flex: 2;">
-    <img src="./img/histograma.png" alt="Histograma">
+    <img src="../../img/histograma.png" alt="Histograma">
   </div>
 
 </div>
@@ -123,7 +123,7 @@ Expresión porcentual de la frecuencia relativa acumulada
 ### Polígono de frecuencias
 Usa puntos medios del hist.
 <!-- ![polígono de frecuencias](./img/poligono_frecuencias.png) -->
-<img src="./img/poligono_frecuencias.png" alt="Polígono de frecuencias" style="max-width:600px;">
+<img src="../../img/poligono_frecuencias.png" alt="Polígono de frecuencias" style="max-width:600px;">
 
 
 ### Diagrama de Frecuencias Acumuladas
@@ -137,12 +137,12 @@ Usa puntos medios del hist.
 | 4 |  5         |     76   | 1           | 11%           |
 
 <!-- ![Diagrama de frecuencias acumuladas](./img/frecuencias_acumuladas.png) -->
-<img src="./img/frecuencias_acumuladas.png" alt="Diagrama de frecuencias acumuladas" style="max-width:600px;">
+<img src="../../img/frecuencias_acumuladas.png" alt="Diagrama de frecuencias acumuladas" style="max-width:600px;">
 
 ### Ojiva
 coincide con los puntos de terminación en el diagrama de frecuencias
 
-<img src="./img/ojiva.png" alt="Ojiva" style="max-width:600px;">
+<img src="../../img/ojiva.png" alt="Ojiva" style="max-width:600px;">
 
 <!-- ![Ojiva](./img/ojiva.png) -->
 
