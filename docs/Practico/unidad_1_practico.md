@@ -366,8 +366,10 @@ La cuarta clase es: **80–89**
 La tercera clase es:**70–79**
 La marca de clase se calcula como el punto medio del intervalo:
 \( X_i = \frac{L_i + L_s}{2} \)
-Donde:- \( L_i = 70 \)- \( L_s = 79 \)
-Sustituyendo:\( X_i = \frac{70 + 79}{2} \) \( X_i = \frac{149}{2} \)\( X_i = 74.5 \)
+Donde:
+    - \( L_i = 70 \)        
+    - \( L_s = 79 \)        
+Sustituyendo:\( X_i = \frac{70 + 79}{2} \) \( X_i = \frac{149}{2} \)\( X_i = 74.5 \)        
 Por lo tanto, la marca de clase de la tercera clase es: \( X_i = 74.5 \text{ cm} \)
 
 ### 4 - d. Limites reales de la 5ta clase
