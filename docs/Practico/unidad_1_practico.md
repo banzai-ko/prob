@@ -141,18 +141,18 @@ s = \sqrt{4.9275} = 2,219797288
 #### Frecuencias Absolutas
 ##### Diagrama de Barras
 
-![Fallas por lote](../img/barras_frecuencia_pco.png)
+![Fallas por lote](/prob/img/barras_frecuencia_pco.png)
 
 #### #Histograma
 
-![Fallas por lote](../img/histograma_pco.png)
+![Fallas por lote](/prob/img/histograma_pco.png)
 
 
 #### Frecuencias Acumuladas
 
 ##### Ojiva
 
-![Ojiva](../img/ojiva_pco.png)
+![Ojiva](/prob/img/ojiva_pco.png)
 
 ## 2.
 Tabla de Pesos, en Kg
@@ -482,10 +482,10 @@ El intervalo de clase con mayor frecuencia es la 3ra Clase
 ## 4. 
 #### Histograma
 
-![Histograma](../img/histograma_pco_4.png)
+![Histograma](/prob/img/histograma_pco_4.png)
 
 #### Poligono de Frecuencias
-![Pol. de frecuecias](../img/poligono_frecuencias_4.png)
+![Pol. de frecuecias](/prob/img/poligono_frecuencias_4.png)
 
 
 ## 5.
@@ -509,7 +509,7 @@ Usando los datos del ejercicio:
 | 7     | 110–119        | 2      | 65     |
 
 
-![Ojiva](../img/ojiva_pco_5.png)
+![Ojiva](/prob/img/ojiva_pco_5.png)
 
 
 ## 6. 

@@ -4,7 +4,7 @@
 Considera el siguiente experimento.
 Tiramos un dado y observamos si sale o no 4. Si sale 4 entonces "1" y si no "0"; podemos así definir una función, relacionando a cada resultado del experimento aleatorio con los números 0 y 1.
 
-<img src="../../img/diagrama_relacion.jpg" width="500px">
+<img src="/prob/img/diagrama_relacion.jpg" width="500px">
 
 ## Problema 2 
 El experimento consiste en tirar una moneda 3 veces consecutivas y contar cantidad de caras que se obtienen. Si a cada elemento del espacio muestral que resulta de este experimento, lo asociamos con los números 0, 1, 2 y 3, queda definida una función.
@@ -51,7 +51,7 @@ P(x=2)=3/8,\;
 P(x=3)=1/8
 \)
 Probabilida de que sea 0, 1, 2 o 3 en base a las tiradas de probabilidad.
-<img src="../../img/distribucion_probabilidad.jpg" width="500px">
+<img src="/prob/img/distribucion_probabilidad.jpg" width="500px">
 
 | x   | 0   | 1   | 2   | 3   |
 |-----|-----|-----|-----|-----|
@@ -126,7 +126,7 @@ P(x=4)=\dfrac{\binom{7}{4}\binom{3}{0}}{\binom{10}{4}}
 
 c. 
 
-<img src="../../img/funcion_probabilidad.jpg" width="500px">
+<img src="/prob/img/funcion_probabilidad.jpg" width="500px">
 
 d. 
 
@@ -143,4 +143,4 @@ d.
 F(x)
 \)
 
-e. <img src="../../img/funcion_acumulacion.jpg" width="500px">
+e. <img src="/prob/img/funcion_acumulacion.jpg" width="500px">
