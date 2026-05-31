@@ -25,6 +25,7 @@ elaborar la distribucion de frecuencias para la variable aleatoria discreta
 | 7                     | 2        |
 
 <!--Data: [2,4,4,1,3,2,2,2] -->
+
 **Total:**  
 - n = 20  
 
@@ -49,6 +50,7 @@ elaborar la distribucion de frecuencias para la variable aleatoria discreta
 Media aritmética = promedio
 <!-- n=20 -->
 <!-- X= 63 / 20 -->
+
 Total de fallos: (0 + 7 + 2 + 4 + 1 + 2 + 1 + 5 + 4 + 3 + 6 + 2 + 6 + 1 + 0 + 2 + 4 + 7 + 5 + 1)
 
 \( t = 63 \)
@@ -62,6 +64,7 @@ ordenar de menor a mayor:
 + Si es par promedio de elemento central y n +1
 
 entonces:  
+
 | Posición | Fallos |
 |----------|--------|
 | 1        | 0      |
@@ -73,7 +76,7 @@ entonces:
 | 7        | 2      |
 | 8        | 2      |
 | 9        | 2      |
-| 10       | 2      | -> 3+2/2
+| 10       | 2      |
 | 11       | 3      |
 | 12       | 4      |
 | 13       | 4      |
